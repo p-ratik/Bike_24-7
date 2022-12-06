@@ -12,7 +12,6 @@
 		751C0BE833EC4551528776E3 /* Pods_Bike_24_7_Bike_24_7UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB8A40EB9DAAEB8CF56619E /* Pods_Bike_24_7_Bike_24_7UITests.framework */; };
 		9A4B45D8293891D8003B2A84 /* BikeCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A4B45D7293891D8003B2A84 /* BikeCategories.json */; };
 		9A4B45DB2938923A003B2A84 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B45DA2938923A003B2A84 /* CategoriesViewController.swift */; };
-		9A4B45E12938A8A0003B2A84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A4B45E02938A89F003B2A84 /* GoogleService-Info.plist */; };
 		9A4B45E42938AA38003B2A84 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B45E22938AA38003B2A84 /* CategoryCollectionViewCell.swift */; };
 		9A4B45E52938AA38003B2A84 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4B45E32938AA38003B2A84 /* CategoryCollectionViewCell.xib */; };
 		9A4B45E72938B971003B2A84 /* categoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B45E62938B971003B2A84 /* categoryDataModel.swift */; };
@@ -33,6 +32,7 @@
 		9A52BFF42922A1A800AEC548 /* KeyChainOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BFF32922A1A800AEC548 /* KeyChainOperations.swift */; };
 		9AEF40882924EC3800EB1699 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF40872924EC3800EB1699 /* HomePageViewController.swift */; };
 		9AF47DEB2927E3F600B599DB /* PasswordPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF47DEA2927E3F600B599DB /* PasswordPolicyViewController.swift */; };
+		A9FBC7FD293F20C700DB9A39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC7FC293F20C700DB9A39 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,6 @@
 		6961CB3468A06A3256C3EFED /* Pods-Bike_24*7-Bike_24*7UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike_24*7-Bike_24*7UITests.debug.xcconfig"; path = "Target Support Files/Pods-Bike_24*7-Bike_24*7UITests/Pods-Bike_24*7-Bike_24*7UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A4B45D7293891D8003B2A84 /* BikeCategories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BikeCategories.json; sourceTree = "<group>"; };
 		9A4B45DA2938923A003B2A84 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
-		9A4B45E02938A89F003B2A84 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9A4B45E22938AA38003B2A84 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A4B45E32938AA38003B2A84 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		9A4B45E62938B971003B2A84 /* categoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryDataModel.swift; sourceTree = "<group>"; };
@@ -87,6 +86,7 @@
 		9AEF40872924EC3800EB1699 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		9AF47DEA2927E3F600B599DB /* PasswordPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPolicyViewController.swift; sourceTree = "<group>"; };
 		9CB8A40EB9DAAEB8CF56619E /* Pods_Bike_24_7_Bike_24_7UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_24_7_Bike_24_7UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FBC7FC293F20C700DB9A39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EE264CC80B743512C9EBDD54 /* Pods_Bike_24_7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_24_7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69CDB4B17EBAC85BEA80EF7 /* Pods-Bike_24*7Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike_24*7Tests.debug.xcconfig"; path = "Target Support Files/Pods-Bike_24*7Tests/Pods-Bike_24*7Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,7 +178,7 @@
 				9A52BFC3292290A500AEC548 /* Assets.xcassets */,
 				9A4B45D7293891D8003B2A84 /* BikeCategories.json */,
 				9A52BFC5292290A500AEC548 /* LaunchScreen.storyboard */,
-				9A4B45E02938A89F003B2A84 /* GoogleService-Info.plist */,
+				A9FBC7FC293F20C700DB9A39 /* GoogleService-Info.plist */,
 				9A52BFC8292290A500AEC548 /* Info.plist */,
 				9A52BFC0292290A300AEC548 /* Bike_24_7.xcdatamodeld */,
 			);
@@ -381,9 +381,9 @@
 				9A4B45E52938AA38003B2A84 /* CategoryCollectionViewCell.xib in Resources */,
 				9A52BFC7292290A500AEC548 /* LaunchScreen.storyboard in Resources */,
 				9A52BFC4292290A500AEC548 /* Assets.xcassets in Resources */,
-				9A4B45E12938A8A0003B2A84 /* GoogleService-Info.plist in Resources */,
 				9A4B45D8293891D8003B2A84 /* BikeCategories.json in Resources */,
 				9A52BFBF292290A300AEC548 /* Main.storyboard in Resources */,
+				A9FBC7FD293F20C700DB9A39 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

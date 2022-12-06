@@ -220,7 +220,7 @@
             </objects>
             <point key="canvasLocation" x="969" y="816"/>
         </scene>
-        <!--Categories View Controller-->
+        <!--Categories-->
         <scene sceneID="cUy-qr-s6g">
             <objects>
                 <viewController storyboardIdentifier="CategoriesViewController" id="j8o-JC-YXh" customClass="CategoriesViewController" customModule="Bike_24_7" customModuleProvider="target" sceneMemberID="viewController">
@@ -264,13 +264,65 @@
                             <constraint firstItem="jtJ-nC-To0" firstAttribute="leading" secondItem="j7x-dB-jJ3" secondAttribute="leading" id="tnz-FV-1qI"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Categories" image="tray.fill" catalog="system" id="T88-Ec-ia4"/>
                     <connections>
                         <outlet property="categoriesCollectionView" destination="jtJ-nC-To0" id="zv3-1B-I9C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DK0-yt-PtF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3447" y="816"/>
+            <point key="canvasLocation" x="4044" y="-285"/>
+        </scene>
+        <!--Orders-->
+        <scene sceneID="uTJ-Gt-70B">
+            <objects>
+                <viewController id="64g-nh-qr9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tkd-9I-Uor">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rje-Kq-9mn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Orders" image="archivebox" catalog="system" id="5m8-zY-gBV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWn-1s-EoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5038" y="78"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DiY-sv-xlI">
+            <objects>
+                <tabBarController storyboardIdentifier="CustomTabBarController" id="T7T-Fu-BQE" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZhD-xV-p7L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="j8o-JC-YXh" kind="relationship" relationship="viewControllers" id="pml-6W-TC9"/>
+                        <segue destination="85D-gG-HDb" kind="relationship" relationship="viewControllers" id="euf-kq-GKP"/>
+                        <segue destination="64g-nh-qr9" kind="relationship" relationship="viewControllers" id="1ak-vJ-i5R"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MfU-56-gjJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2962" y="78"/>
+        </scene>
+        <!--Favourites-->
+        <scene sceneID="ZKz-bU-F41">
+            <objects>
+                <viewController id="85D-gG-HDb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a59-o4-hgj">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3b4-tr-OvL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favourites" image="star.fill" catalog="system" id="vEe-sS-nxz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NxQ-Ee-NdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4043" y="498"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="ocL-7e-8uc">
@@ -729,6 +781,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="archivebox" catalog="system" width="128" height="106"/>
         <image name="bikeLogo" width="350" height="350"/>
         <image name="chevron.backward.2" catalog="system" width="128" height="105"/>
         <image name="exclamationmark.triangle.fill" catalog="system" width="128" height="112"/>
@@ -737,6 +790,8 @@
         <image name="login" width="612" height="566"/>
         <image name="multiply" catalog="system" width="128" height="111"/>
         <image name="pngwing.com" width="1988" height="1136"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="tray.fill" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
