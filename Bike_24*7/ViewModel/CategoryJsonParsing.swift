@@ -17,6 +17,7 @@ class CategoryJsonParsing: NSObject {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let json = try JSONSerialization.jsonObject(with: data, options: []) as! [[String : String]]
+                categoryArr = []
                 for dict in json {
                     let name = dict["Name"]!
                     let logo = dict["Logo"]!
