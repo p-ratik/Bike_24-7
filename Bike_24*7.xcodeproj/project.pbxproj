@@ -177,6 +177,7 @@
 				9A52BFF32922A1A800AEC548 /* KeyChainOperations.swift */,
 				9A52BFBD292290A300AEC548 /* Main.storyboard */,
 				9A52BFC3292290A500AEC548 /* Assets.xcassets */,
+				A96055DD29406FB9005B6562 /* BikeCategories.json */,
 				9A52BFC5292290A500AEC548 /* LaunchScreen.storyboard */,
 				A9FBC7FC293F20C700DB9A39 /* GoogleService-Info.plist */,
 				9A52BFC8292290A500AEC548 /* Info.plist */,
@@ -258,7 +259,6 @@
 		A9FBC83F29406C5600DB9A39 /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				A96055DD29406FB9005B6562 /* BikeCategories.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
