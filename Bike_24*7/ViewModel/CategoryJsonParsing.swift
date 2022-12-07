@@ -13,7 +13,7 @@ class CategoryJsonParsing: NSObject {
     static var categoryArr: [Category] = []
     
     static func jsonCall() {
-        if let path = Bundle.main.path(forResource: "BikeCategories", ofType: "json") {
+        if let path = Bundle.main.path(forResource: "../BikeCategories", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let json = try JSONSerialization.jsonObject(with: data, options: []) as! [[String : String]]
