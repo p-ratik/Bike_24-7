@@ -1,6 +1,6 @@
 [
     {
-        "id" : 1,
+        "id" : "1",
         "name": "Kawasaki Ninja h2R" ,
         "type": "Gear" ,
         "description" : "The Kawasaki Ninja H2R is the most powerful production bike on sale in India at present and churns out in excess of 300 bhp. The bike is not street-legal and is meant only for the racetrack. Powered by a 998 cc in-line four-cylinder engine, the motor comes with a supercharger. The motor manages to belt out 308 bhp in stock form, which can be further increased to 321 bhp with the Ram Air intake. Peak torque output stands at 165 Nm available at 12,500 rpm. It is an absolute object of desire.",
@@ -8,7 +8,7 @@
         "Price" : "Rs.79,90,000 "
     },
     {
-        "id" : 2,
+        "id" : "2",
         "name": "Kawasaki Z900" ,
         "type": "Gear" ,
         "description" : "The Metallic Spark Black features a single-tone finish along with a neon green shade for the chassis. The Candy Lime Green Type 3, on the other hand, features a dual-tone finish that includes lime green base paint with highlights of black on the front fender, fuel tank, and the rear panel. This colour option also uses a lime green colour for the chassis. Both colour options are available at Rs 8.42 lakh..",
@@ -16,7 +16,7 @@
         "Price" : "Rs.8,47,000"
     },
     {
-        "id" : 3,
+        "id" : "3",
         "name": "Kawasaki Ninja 650" ,
         "type": "Gear" ,
         "description" : "The BS6 Kawasaki Ninja 650 has received several cosmetic and mechanical updates. The 2020 Kawasaki Ninja 650 continues to come with a 649cc unit that delivers the same power and lesser torque as compared to BS4. It generates 68hp and 64Nm mated to a 6-speed transmission. In features, it gets 4.3 coloured TFT instrument cluster compatible with smartphone connectivity and GPS. Also, it comes with Dunlop Sportmax Roadsport 2 tyres and has a kerb weight of 196kg. The BS6 Kawasaki Ninja 650 is priced at Rs 6.24 lakh, ex-showroom.",
@@ -24,7 +24,7 @@
         "Price"  : "Rs.6,89,000 "
     },
 {
-        "id" : 4,
+        "id" : "4",
         "name": "Kawasaki J300" ,
         "type": "Gearless" ,
         "description" : "An innovative urban transport solution, the J300 seamlessly blends sport, control, comfort and convenience, and wraps it all in a distinctive design that makes it instantlyrecognisable as a Kawasaki.The result is a package that will appeal to sports-minded riders looking for a daily dose of funfrom their commute.",
@@ -32,7 +32,7 @@
         "Price" : "Rs.3,40,000 "
     },
 {
-        "id" : 5,
+        "id" : "5",
         "name": "Kawasaki Z800" ,
         "type": "Gear" ,
         "description" : "Kawasaki Motors has rolled out a limited edition of its spirited street-fighter, Z800. Priced akin to its standard version (Rs 7.5 lakh, ex-showroom, Delhi), Kawasaki has produced just 10 units of the limited edition variant. Cosmetic upgrades such as black and blue dual paint scheme, body graphics, electric blue shade on fuel tank and blue piping on rims make the limited edition more desirable. Mechanically, it remains unchanged using the 806cc, liquid-cooled engine good for 111bhp, paired to a six-speed transmission.",

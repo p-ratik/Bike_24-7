@@ -79,6 +79,19 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let bikeModelsViewController = self.storyboard?.instantiateViewController(withIdentifier: "BikeModelsViewController") as! BikeModelsViewController
+        if(searching) {
+            bikeModelsViewController.fileName = filteredCategories[indexPath.row].name
+            self.navigationController?.pushViewController(bikeModelsViewController, animated: true)
+        }
+        else {
+            bikeModelsViewController.fileName = CategoryJsonParsing.categoryArr[indexPath.row].name
+            self.navigationController?.pushViewController(bikeModelsViewController, animated: true)
+        }
+        
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 190, height: 250)

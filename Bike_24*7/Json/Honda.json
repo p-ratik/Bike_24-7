@@ -1,6 +1,6 @@
 [
     {
-        "id" : 1,
+        "id" : "1",
         "name": "Honda SP 125" ,
         "type": "Gear" ,
         "description" : "Honda SP 125 is the BS6 version of the company’s popular CB Shine SP 125 commuter motorcycle. Powering the Honda SP 125 is a 124.7cc engine that is good for producing respective power and torque outputs of 10.7hp and 10.9Nm. The bike also comes with a segment first start stop switch that aims to better the fuel efficiency." ,
@@ -8,7 +8,7 @@
         "Price" : "73,450"
     },
     {
-        "id" : 2,
+        "id" : "2",
         "name": "Honda Shine" ,
         "type": "Gear" ,
         "description" : "The CB Shine is a 125cc commuter motorcycle developed by Honda for the mass market segment. The Honda Shine is powered by 123.94cc BS6 engine which develops a power of 10.59 bhp and a torque of 11 Nm. With both front and rear drum brakes, Honda Shine comes up with combined braking system of both wheels. This Shine bike weighs 114 kg and has a fuel tank capacity of 10.5 liters.",
@@ -16,7 +16,7 @@
         "Price" : "77,866"
     },
     {
-        "id" : 3,
+        "id" : "3",
         "name": "Honda Dio" ,
         "type": "Gearless" ,
         "description" : "Honda has introduced the new Dio in two variants including standard and deluxe.  The Honda Dio is powered by 109.51cc BS6 engine which develops a power of 7.65 bhp and a torque of 9 Nm. With both front and rear drum brakes, Honda Dio comes up with combined braking system of both wheels. This Dio scooter weighs 105 kg and has a fuel tank capacity of 5.3 liters.",
@@ -24,7 +24,7 @@
         "Price" : "71,372"
     },
     {
-        "id" : 4,
+        "id" : "4",
         "name": "Honda Activa 5G" ,
         "type": "Gearless" ,
         "description" : "It may be the highest-selling two-wheeler in the Indian market, but Honda hasn’t stopped the evolution of the Activa. Activa 5G also gets the new ignition key slot from the Grazia, which has the provision for the seat release. At the heart of the Activa 5G is the same 109cc engine which delivers 8bhp and 8.8Nm of torque.",
@@ -32,7 +32,7 @@
         "Price" : "57,063"
     },
     {
-        "id" : 5,
+        "id" : "5",
         "name": "Honda Goldwing" ,
         "type": "Gear" ,
         "description" : "Honda Goldwing is a super bike available in only 1 variant and 1 colour. The Honda Goldwing is powered by 1833cc BS6 engine which develops a power of 124.7 bhp and a torque of 170 Nm. With both front and rear disc brakes, Honda Goldwing comes up with anti-locking braking system. This Goldwing bike weighs 390 kg and has a fuel tank capacity of 21.1 liters.",

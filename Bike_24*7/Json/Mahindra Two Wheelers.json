@@ -1,6 +1,6 @@
 [
     {
-        "id" : 1,
+        "id" : "1",
         "name": "Mahindra Rodeo" ,
         "type": "Gearless" ,
         "description" : "Mahindra Rodeo is a 125 cc gearless power scooter and incorporates technological and design input from Taiwan's SYM & Italy's Engines Engineering. Rodeo is supplied with telescopic suspension. The manufacturer has also included a tachometer and a digital console incorporating a trip meter, clock, and a USB mobile phone charger.",
@@ -8,7 +8,7 @@
         "Price" : "Rs.47,000"
     },
     {
-        "id" : 2,
+        "id" : "2",
         "name": "Mahindra Rodeo RZ" ,
         "type": "Gearless" ,
         "description" : "The Rodeo RZ comes powered by the refined, 124.6cc, four-stroke, air-cooled engine Mahindra have christened the Z-series. This engine features an updated dual-curve digital ignition system (DCDI) that Mahindra claims works to provide superior economy. The scooter also deploys a new carburettor. The RZ pulls smoothly with quick initial acceleration, delivering a maximum of 8.05bhp at 7000rpm with a peak torque figure of 0.91kgm at 5500rpm. Transmission is via the convenient, automatic CVT system.",
@@ -16,7 +16,7 @@
         "Price" : "Rs.49,030"
     },
     {
-        "id" : 3,
+        "id" : "3",
         "name": "Mahindra Duro" ,
         "type": "Gearless" ,
         "description" : "The Mahindra Duro comes equipped with the same engine which powers its siblings, Flyte and Rodeo. It is a four stroke engine with a displacement of 124.6cc. The powerful and already tested mill belts out 8 bhp of power at 7,000 rpm and churns 9 Nm of peak torque at 5,500 rpm, equipped with a CVT transmission",
@@ -24,7 +24,7 @@
         "Price"  : "Rs.49,030"
     },
 {
-        "id" : 4,
+        "id" : "4",
         "name": "Mahindra Centuro" ,
         "type": "Gear" ,
         "description" : "Mahindra Centuro is a 110cc Motorcycle manufactured in India by Mahindra Two Wheelers.[4] The Centuro gets a remote lock with a flip key, the remote lock uses a 96-bit secure access just like four wheelers.[5] The Centuro has already created a buzz in the market with its design and features and is likely to give leaders Hero MotoCorp, Bajaj, TVS and Honda some serious competition. The bike has been designed and developed from the ground-up at their R&D facility in Pune, in view of demands and much criticism received from thousands of customers in the segment.",
@@ -32,7 +32,7 @@
         "Price" : "Rs.63,800"
     },
 {
-        "id" : 5,
+        "id" : "5",
         "name":"Mahindra Centuro RockStar" ,
         "type": "Gear" ,
         "description" : "Mahindra Centuro 110 grabs in 106.7 cc single potted engine which comes cleverly mated with a 4-speed manual gearbox, with Wet Multi Plate clutch, for a buttery gearshift. Its pickup is commendable and it gets to 60 in 8.85 seconds. The overall length of this vehicle is 2031 mm and the kerb weight stands at 120 Kg.",

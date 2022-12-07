@@ -6,6 +6,7 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -321,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWn-1s-EoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5038" y="78"/>
+            <point key="canvasLocation" x="5181" y="365"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DiY-sv-xlI">
@@ -812,6 +813,145 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mkf-0F-xOX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-241" y="79"/>
+        </scene>
+        <!--Categories-->
+        <scene sceneID="366-w6-tn6">
+            <objects>
+                <viewController storyboardIdentifier="BikeModelsViewController" id="0Ej-9Z-hNC" customClass="BikeModelsViewController" customModule="Bike_24_7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hUd-8v-rci">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Dzm-60-Cec">
+                                <rect key="frame" x="0.0" y="226" width="428" height="700"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="700" id="7Yw-Fq-G0P"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B5C-jM-Lex">
+                                    <size key="itemSize" width="256" height="316"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="9" minY="0.0" maxX="9" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BikeModelsCollectionViewCell" id="kk3-yN-P8j" customClass="BikeModelsCollectionViewCell" customModule="Bike_24_7" customModuleProvider="target">
+                                        <rect key="frame" x="86" y="0.0" width="256" height="316"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Vo1-n3-ah3">
+                                            <rect key="frame" x="0.0" y="0.0" width="256" height="316"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ha0-FJ-WYx">
+                                                    <rect key="frame" x="10" y="10" width="236" height="180"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="180" id="Qyg-BP-Owz"/>
+                                                        <constraint firstAttribute="width" constant="180" id="ROM-N1-2Ch"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRt-UM-l0n">
+                                                    <rect key="frame" x="15" y="200" width="227" height="50"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSM-Xq-4qA">
+                                                    <rect key="frame" x="15" y="258" width="227" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="aRa-T6-3q8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Ha0-FJ-WYx" secondAttribute="trailing" constant="10" id="LFa-eo-iCa"/>
+                                                <constraint firstItem="Ha0-FJ-WYx" firstAttribute="leading" secondItem="Vo1-n3-ah3" secondAttribute="leading" constant="10" id="NE7-Sj-V1i"/>
+                                                <constraint firstItem="sSM-Xq-4qA" firstAttribute="leading" secondItem="Vo1-n3-ah3" secondAttribute="leading" constant="15" id="P7Q-XD-0nA"/>
+                                                <constraint firstItem="Ha0-FJ-WYx" firstAttribute="top" secondItem="Vo1-n3-ah3" secondAttribute="top" constant="10" id="TOu-hs-zO1"/>
+                                                <constraint firstItem="tRt-UM-l0n" firstAttribute="leading" secondItem="Vo1-n3-ah3" secondAttribute="leading" constant="15" id="VT6-xk-j8D"/>
+                                                <constraint firstItem="sSM-Xq-4qA" firstAttribute="top" secondItem="tRt-UM-l0n" secondAttribute="bottom" constant="8" symbolic="YES" id="VYj-Gb-JJU"/>
+                                                <constraint firstItem="tRt-UM-l0n" firstAttribute="top" secondItem="Ha0-FJ-WYx" secondAttribute="bottom" constant="10" id="WCk-6Y-6SN"/>
+                                                <constraint firstAttribute="trailing" secondItem="tRt-UM-l0n" secondAttribute="trailing" constant="14" id="WbQ-uc-def"/>
+                                                <constraint firstAttribute="bottom" secondItem="sSM-Xq-4qA" secondAttribute="bottom" constant="8" id="Xln-sZ-jie"/>
+                                                <constraint firstAttribute="trailing" secondItem="sSM-Xq-4qA" secondAttribute="trailing" constant="14" id="fyQ-o1-9lf"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="256" height="316"/>
+                                        <connections>
+                                            <outlet property="BikeName" destination="tRt-UM-l0n" id="HbW-YD-bhO"/>
+                                            <outlet property="bikeDescription" destination="sSM-Xq-4qA" id="sbe-36-Pxf"/>
+                                            <outlet property="modelImageView" destination="Ha0-FJ-WYx" id="UKB-5f-fRd"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0m-Vo-OvQ">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="104"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="bJM-nL-Cte"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="9Ic-p3-ufF">
+                                <rect key="frame" x="20" y="137" width="388" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bike 24x7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRn-7S-cNz">
+                                <rect key="frame" x="151.33333333333334" y="53" width="125.33333333333334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hY7-07-U3P">
+                                <rect key="frame" x="8" y="44" width="45" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZjA-0n-thO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward.2" catalog="system">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="bikeModelsBackButtonClicked:" destination="0Ej-9Z-hNC" eventType="touchUpInside" id="5PP-EQ-fsZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Swd-ye-rUK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dzm-60-Cec" firstAttribute="trailing" secondItem="g0m-Vo-OvQ" secondAttribute="trailing" id="0pz-9t-Shj"/>
+                            <constraint firstItem="Dzm-60-Cec" firstAttribute="leading" secondItem="g0m-Vo-OvQ" secondAttribute="leading" id="4Fn-r0-0dl"/>
+                            <constraint firstItem="hY7-07-U3P" firstAttribute="leading" secondItem="Swd-ye-rUK" secondAttribute="leading" constant="8" id="4aH-7H-Fc4"/>
+                            <constraint firstItem="g0m-Vo-OvQ" firstAttribute="top" secondItem="hUd-8v-rci" secondAttribute="top" id="8E0-b9-YEF"/>
+                            <constraint firstItem="Dzm-60-Cec" firstAttribute="centerX" secondItem="9Ic-p3-ufF" secondAttribute="centerX" id="8I6-JU-Mtd"/>
+                            <constraint firstItem="Swd-ye-rUK" firstAttribute="trailing" secondItem="9Ic-p3-ufF" secondAttribute="trailing" constant="20" id="8gG-LO-jDz"/>
+                            <constraint firstItem="hY7-07-U3P" firstAttribute="top" secondItem="Swd-ye-rUK" secondAttribute="top" id="FrM-VI-BK6"/>
+                            <constraint firstItem="9Ic-p3-ufF" firstAttribute="top" secondItem="hY7-07-U3P" secondAttribute="bottom" constant="43" id="Kbj-ce-FjW"/>
+                            <constraint firstItem="Dzm-60-Cec" firstAttribute="top" secondItem="9Ic-p3-ufF" secondAttribute="bottom" constant="38" id="cqG-G6-cRD"/>
+                            <constraint firstItem="9Ic-p3-ufF" firstAttribute="top" secondItem="g0m-Vo-OvQ" secondAttribute="bottom" constant="33" id="hZ6-RK-Jdc"/>
+                            <constraint firstItem="9Ic-p3-ufF" firstAttribute="leading" secondItem="Swd-ye-rUK" secondAttribute="leading" constant="20" id="iU9-Id-ZBC"/>
+                            <constraint firstItem="Dzm-60-Cec" firstAttribute="leading" secondItem="hUd-8v-rci" secondAttribute="leading" id="ivK-cn-7gI"/>
+                            <constraint firstItem="dRn-7S-cNz" firstAttribute="centerX" secondItem="hUd-8v-rci" secondAttribute="centerX" id="kxo-wD-eEc"/>
+                            <constraint firstItem="dRn-7S-cNz" firstAttribute="top" secondItem="Swd-ye-rUK" secondAttribute="top" constant="9" id="pO8-BH-Gjy"/>
+                            <constraint firstAttribute="bottom" secondItem="Dzm-60-Cec" secondAttribute="bottom" id="upG-CS-3It"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Categories" image="tray.fill" catalog="system" id="edd-0W-AV0"/>
+                    <connections>
+                        <outlet property="bikeModelSearchBar" destination="9Ic-p3-ufF" id="ANP-ge-5ec"/>
+                        <outlet property="bikeModelsCollectionView" destination="Dzm-60-Cec" id="hDN-iW-32K"/>
+                        <outlet property="titleLabel" destination="dRn-7S-cNz" id="WgE-Yr-9Lb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xoy-Tk-8xi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4774.7663551401865" y="-285.09719222462206"/>
         </scene>
     </scenes>
     <resources>

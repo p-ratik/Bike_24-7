@@ -1,6 +1,6 @@
 [
     {
-        "id" : 1,
+        "id" : "1",
         "name": "Hero Splendor Plus" ,
         "type": "Gear" ,
         "description" : "The Hero Splendor Plus is powered by 97.2cc BS6 engine which develops a power of 7.91 bhp and a torque of 8.05 Nm.Hero Splendor Plus comes up with combined braking system of both wheels." ,
@@ -8,7 +8,7 @@
         "Price" : "70,957"
     },
     {
-        "id" : 2,
+        "id" : "2",
         "name": "Hero Xtreme 200S" ,
         "type": "Gear" ,
         "description" : "Hero Xtreme 200S is a sports bike powered by 199.6cc BS6 engine which develops a power of 17.8 bhp and a torque of 16.45 Nm",
@@ -16,7 +16,7 @@
         "Price" : "1.35 Lakh"
     },
     {
-        "id" : 3,
+        "id" : "3",
         "name": "Hero Splendor iSmart 110" ,
         "type": "Gear" ,
         "description" : "The Splendor iSmart 110 is Hero MotoCorp’s first ingeniously developed motorcycle. Powering the Splendor iSmart 110 is a new 110cc engine that produces 9bhp and 9Nm of torque, and is mated to a four-speed gearbox",
@@ -24,7 +24,7 @@
         "Price" : "71,882"
     },
     {
-        "id" : 4,
+        "id" : "4",
         "name": "Hero Maestro Edge 125" ,
         "type": "Gearless" ,
         "description" : "The Maestro Edge 125 is the first scooter in India to feature fuel-injection technology The Hero Maestro Edge 125 is powered by 124.6cc BS6 engine which develops a power of 9 bhp and a torque of 10.4 Nm. ",
@@ -32,7 +32,7 @@
         "Price" : "87,354"
     },
     {
-        "id" : 5,
+        "id" : "5",
         "name": "Hero HF Deluxe" ,
         "type": "Gear" ,
         "description" : "The Hero HF Deluxe is powered by 97.2cc BS6 engine which develops a power of 7.91 bhp and a torque of 8.05 Nm. This HF Deluxe bike weighs 110 kg and has a fuel tank capacity of 9.1 liters.",
