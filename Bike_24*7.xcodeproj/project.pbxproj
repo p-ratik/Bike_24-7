@@ -32,16 +32,6 @@
 		9AEF40882924EC3800EB1699 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF40872924EC3800EB1699 /* HomePageViewController.swift */; };
 		9AF47DEB2927E3F600B599DB /* PasswordPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF47DEA2927E3F600B599DB /* PasswordPolicyViewController.swift */; };
 		A9FBC7FD293F20C700DB9A39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC7FC293F20C700DB9A39 /* GoogleService-Info.plist */; };
-		A9FBC83529406BAD00DB9A39 /* Hero.json in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC82B29406BAD00DB9A39 /* Hero.json */; };
-		A9FBC83629406BAD00DB9A39 /* Mahindra Two Wheelers.json in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC82C29406BAD00DB9A39 /* Mahindra Two Wheelers.json */; };
-		A9FBC83729406BAD00DB9A39 /* BGauss.json in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC82D29406BAD00DB9A39 /* BGauss.json */; };
-		A9FBC83829406BAD00DB9A39 /* BMW.json in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC82E29406BAD00DB9A39 /* BMW.json */; };
-		A9FBC83929406BAD00DB9A39 /* Royal Enfield.json in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC82F29406BAD00DB9A39 /* Royal Enfield.json */; };
-		A9FBC83A29406BAD00DB9A39 /* Vespa.json in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC83029406BAD00DB9A39 /* Vespa.json */; };
-		A9FBC83B29406BAD00DB9A39 /* Suzuki.json in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC83129406BAD00DB9A39 /* Suzuki.json */; };
-		A9FBC83C29406BAD00DB9A39 /* Kawasaki.json in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC83229406BAD00DB9A39 /* Kawasaki.json */; };
-		A9FBC83D29406BAD00DB9A39 /* Yamaha.json in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC83329406BAD00DB9A39 /* Yamaha.json */; };
-		A9FBC83E29406BAD00DB9A39 /* Honda.json in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC83429406BAD00DB9A39 /* Honda.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,16 +85,6 @@
 		9AF47DEA2927E3F600B599DB /* PasswordPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPolicyViewController.swift; sourceTree = "<group>"; };
 		9CB8A40EB9DAAEB8CF56619E /* Pods_Bike_24_7_Bike_24_7UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_24_7_Bike_24_7UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FBC7FC293F20C700DB9A39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A9FBC82B29406BAD00DB9A39 /* Hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hero.json; sourceTree = "<group>"; };
-		A9FBC82C29406BAD00DB9A39 /* Mahindra Two Wheelers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Mahindra Two Wheelers.json"; sourceTree = "<group>"; };
-		A9FBC82D29406BAD00DB9A39 /* BGauss.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BGauss.json; sourceTree = "<group>"; };
-		A9FBC82E29406BAD00DB9A39 /* BMW.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BMW.json; sourceTree = "<group>"; };
-		A9FBC82F29406BAD00DB9A39 /* Royal Enfield.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Royal Enfield.json"; sourceTree = "<group>"; };
-		A9FBC83029406BAD00DB9A39 /* Vespa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vespa.json; sourceTree = "<group>"; };
-		A9FBC83129406BAD00DB9A39 /* Suzuki.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Suzuki.json; sourceTree = "<group>"; };
-		A9FBC83229406BAD00DB9A39 /* Kawasaki.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Kawasaki.json; sourceTree = "<group>"; };
-		A9FBC83329406BAD00DB9A39 /* Yamaha.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Yamaha.json; sourceTree = "<group>"; };
-		A9FBC83429406BAD00DB9A39 /* Honda.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Honda.json; sourceTree = "<group>"; };
 		EE264CC80B743512C9EBDD54 /* Pods_Bike_24_7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_24_7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69CDB4B17EBAC85BEA80EF7 /* Pods-Bike_24*7Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike_24*7Tests.debug.xcconfig"; path = "Target Support Files/Pods-Bike_24*7Tests/Pods-Bike_24*7Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,7 +165,7 @@
 		9A52BFB6292290A300AEC548 /* Bike_24*7 */ = {
 			isa = PBXGroup;
 			children = (
-				A9FBC7FE2940656B00DB9A39 /* Json */,
+				A9FBC83F29406C5600DB9A39 /* Json */,
 				9AC189FD292BD75B000D49DC /* Validation */,
 				9AC189FC292BD750000D49DC /* Views */,
 				9AC189FB292BD745000D49DC /* ViewModel */,
@@ -273,19 +253,9 @@
 			path = "Sign Up";
 			sourceTree = "<group>";
 		};
-		A9FBC7FE2940656B00DB9A39 /* Json */ = {
+		A9FBC83F29406C5600DB9A39 /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				A9FBC82D29406BAD00DB9A39 /* BGauss.json */,
-				A9FBC82E29406BAD00DB9A39 /* BMW.json */,
-				A9FBC82B29406BAD00DB9A39 /* Hero.json */,
-				A9FBC83429406BAD00DB9A39 /* Honda.json */,
-				A9FBC83229406BAD00DB9A39 /* Kawasaki.json */,
-				A9FBC82C29406BAD00DB9A39 /* Mahindra Two Wheelers.json */,
-				A9FBC82F29406BAD00DB9A39 /* Royal Enfield.json */,
-				A9FBC83129406BAD00DB9A39 /* Suzuki.json */,
-				A9FBC83029406BAD00DB9A39 /* Vespa.json */,
-				A9FBC83329406BAD00DB9A39 /* Yamaha.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -413,19 +383,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9FBC83D29406BAD00DB9A39 /* Yamaha.json in Resources */,
-				A9FBC83829406BAD00DB9A39 /* BMW.json in Resources */,
-				A9FBC83E29406BAD00DB9A39 /* Honda.json in Resources */,
-				A9FBC83729406BAD00DB9A39 /* BGauss.json in Resources */,
-				A9FBC83B29406BAD00DB9A39 /* Suzuki.json in Resources */,
 				9A4B45E52938AA38003B2A84 /* CategoryCollectionViewCell.xib in Resources */,
 				9A52BFC7292290A500AEC548 /* LaunchScreen.storyboard in Resources */,
-				A9FBC83629406BAD00DB9A39 /* Mahindra Two Wheelers.json in Resources */,
-				A9FBC83A29406BAD00DB9A39 /* Vespa.json in Resources */,
-				A9FBC83C29406BAD00DB9A39 /* Kawasaki.json in Resources */,
 				9A52BFC4292290A500AEC548 /* Assets.xcassets in Resources */,
-				A9FBC83929406BAD00DB9A39 /* Royal Enfield.json in Resources */,
-				A9FBC83529406BAD00DB9A39 /* Hero.json in Resources */,
 				9A52BFBF292290A300AEC548 /* Main.storyboard in Resources */,
 				A9FBC7FD293F20C700DB9A39 /* GoogleService-Info.plist in Resources */,
 			);
