@@ -32,6 +32,16 @@
 		9AEF40882924EC3800EB1699 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF40872924EC3800EB1699 /* HomePageViewController.swift */; };
 		9AF47DEB2927E3F600B599DB /* PasswordPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF47DEA2927E3F600B599DB /* PasswordPolicyViewController.swift */; };
 		A96055E229407EA2005B6562 /* BikeCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055E129407EA2005B6562 /* BikeCategories.json */; };
+		A96055E429407F7B005B6562 /* Suzuki.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055E329407F7B005B6562 /* Suzuki.json */; };
+		A96055E629407FE2005B6562 /* Mahindra.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055E529407FE2005B6562 /* Mahindra.json */; };
+		A96055E829408023005B6562 /* Royal Enfield.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055E729408023005B6562 /* Royal Enfield.json */; };
+		A96055EA29408077005B6562 /* Hero.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055E929408077005B6562 /* Hero.json */; };
+		A96055EC294080A3005B6562 /* Vespa.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055EB294080A3005B6562 /* Vespa.json */; };
+		A96055EE294080F8005B6562 /* Honda.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055ED294080F8005B6562 /* Honda.json */; };
+		A96055F029408118005B6562 /* Kawasaki.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055EF29408118005B6562 /* Kawasaki.json */; };
+		A96055F229408138005B6562 /* BMW.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055F129408138005B6562 /* BMW.json */; };
+		A96055F429408162005B6562 /* BGauss.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055F329408162005B6562 /* BGauss.json */; };
+		A96055F629408195005B6562 /* Yamah.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055F529408195005B6562 /* Yamah.json */; };
 		A9FBC7FD293F20C700DB9A39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC7FC293F20C700DB9A39 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +96,16 @@
 		9AF47DEA2927E3F600B599DB /* PasswordPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPolicyViewController.swift; sourceTree = "<group>"; };
 		9CB8A40EB9DAAEB8CF56619E /* Pods_Bike_24_7_Bike_24_7UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_24_7_Bike_24_7UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96055E129407EA2005B6562 /* BikeCategories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BikeCategories.json; sourceTree = "<group>"; };
+		A96055E329407F7B005B6562 /* Suzuki.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Suzuki.json; sourceTree = "<group>"; };
+		A96055E529407FE2005B6562 /* Mahindra.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mahindra.json; sourceTree = "<group>"; };
+		A96055E729408023005B6562 /* Royal Enfield.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Royal Enfield.json"; sourceTree = "<group>"; };
+		A96055E929408077005B6562 /* Hero.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Hero.json; sourceTree = "<group>"; };
+		A96055EB294080A3005B6562 /* Vespa.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Vespa.json; sourceTree = "<group>"; };
+		A96055ED294080F8005B6562 /* Honda.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Honda.json; sourceTree = "<group>"; };
+		A96055EF29408118005B6562 /* Kawasaki.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Kawasaki.json; sourceTree = "<group>"; };
+		A96055F129408138005B6562 /* BMW.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BMW.json; sourceTree = "<group>"; };
+		A96055F329408162005B6562 /* BGauss.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BGauss.json; sourceTree = "<group>"; };
+		A96055F529408195005B6562 /* Yamah.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Yamah.json; sourceTree = "<group>"; };
 		A9FBC7FC293F20C700DB9A39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EE264CC80B743512C9EBDD54 /* Pods_Bike_24_7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_24_7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69CDB4B17EBAC85BEA80EF7 /* Pods-Bike_24*7Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike_24*7Tests.debug.xcconfig"; path = "Target Support Files/Pods-Bike_24*7Tests/Pods-Bike_24*7Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +279,16 @@
 			isa = PBXGroup;
 			children = (
 				A96055E129407EA2005B6562 /* BikeCategories.json */,
+				A96055E529407FE2005B6562 /* Mahindra.json */,
+				A96055F529408195005B6562 /* Yamah.json */,
+				A96055E729408023005B6562 /* Royal Enfield.json */,
+				A96055F329408162005B6562 /* BGauss.json */,
+				A96055F129408138005B6562 /* BMW.json */,
+				A96055E929408077005B6562 /* Hero.json */,
+				A96055EF29408118005B6562 /* Kawasaki.json */,
+				A96055ED294080F8005B6562 /* Honda.json */,
+				A96055EB294080A3005B6562 /* Vespa.json */,
+				A96055E329407F7B005B6562 /* Suzuki.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -387,9 +417,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A4B45E52938AA38003B2A84 /* CategoryCollectionViewCell.xib in Resources */,
+				A96055E629407FE2005B6562 /* Mahindra.json in Resources */,
+				A96055F629408195005B6562 /* Yamah.json in Resources */,
 				9A52BFC7292290A500AEC548 /* LaunchScreen.storyboard in Resources */,
+				A96055EA29408077005B6562 /* Hero.json in Resources */,
+				A96055F229408138005B6562 /* BMW.json in Resources */,
 				9A52BFC4292290A500AEC548 /* Assets.xcassets in Resources */,
+				A96055F429408162005B6562 /* BGauss.json in Resources */,
+				A96055EC294080A3005B6562 /* Vespa.json in Resources */,
+				A96055E829408023005B6562 /* Royal Enfield.json in Resources */,
+				A96055F029408118005B6562 /* Kawasaki.json in Resources */,
 				9A52BFBF292290A300AEC548 /* Main.storyboard in Resources */,
+				A96055EE294080F8005B6562 /* Honda.json in Resources */,
+				A96055E429407F7B005B6562 /* Suzuki.json in Resources */,
 				A96055E229407EA2005B6562 /* BikeCategories.json in Resources */,
 				A9FBC7FD293F20C700DB9A39 /* GoogleService-Info.plist in Resources */,
 			);

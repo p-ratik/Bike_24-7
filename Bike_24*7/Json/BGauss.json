@@ -1,0 +1,29 @@
+[
+    {
+        "id" : 1,
+        "name": "BGuass B8" ,
+        "type": "Gearless" ,
+        "description" : "BGauss is the latest company under RR Global’s umbrella. If you haven’t heard of it, RR Global is an electrical conglomerate that claims to be worth USD 800 million (about Rs 5,974 crore). The company’s products include wires, copper tubes, magnet wires, consumer electrical products, among other things. With BGauss, RR Global marks its entry into the growing two-wheeler EV market in India. ",
+        "image": "https://imgd.aeplcdn.com/1280x720/bw/models/bgauss-b8-lead-acid20201006202843.jpg",
+        "Price" : "Rs.84,699"
+    },
+    {
+        "id" : 2,
+        "name": "BGauss A2" ,
+        "type": "Gearless" ,
+        "description" : " The BGauss A2 comes with a fully digital touchscreen instrument cluster. The scooter gets practical features like anti-theft alarm, anti-theft motor locking, centralised seat lock, USB charging, reverse assist and side-stand sensor. There are even three riding modes: low, mid and high. However, we aren’t sure how they will help considering the scooter’s top speed is just 25kmph. The battery pack in the lithium-ion variant is removable whereas the lead-acid battery isn’t. As expected, the lighting system is all-LED.",
+        "image": "https://media.zigcdn.com/media/model/2020/Jul/bgauss-a2_930x620.jpg",
+        "Price" : "Rs.71,922"
+    },
+    {
+        "id" : 3,
+        "name": "BGuass D15" ,
+        "type": "Gearless" ,
+        "description" : " The BGauss D15 is powered by a hub-mounted permanent magnet synchronous motor that churns out a peak power of 3.1kW and 110Nm. It is paired to a removable 3.2kWh li-ion battery pack that offers a claimed range of 115km. The scooter gets a claimed top speed of 60kmph and does the 0-40kmph run in seven seconds.",
+        "image": " https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20220517034150_bgauss_d152.jpg",
+        "Price" : "99,000"
+    }
+]
+
+
+

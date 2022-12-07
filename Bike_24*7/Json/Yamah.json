@@ -1,0 +1,44 @@
+[
+    {
+        "id" : 1,
+        "name": "Yamaha YZF-R6" ,
+        "type": "Gear" ,
+        "description" : "Yamaha YZF R6 is a flagship supersport motorcycle, available in 1 variant. YZF R6 generates 118.4 HP @ 14,500 rpm of power and 61.7 Nm @ 10500 rpm of torque from its 599 cc, 4-cylinder, 4-stroke, 16 titanium valves, liquid-cooled, DOHC engine." ,
+        "image": "https://motobike.in/wp-content/uploads/2020/09/Yamaha-YZF-R6-Blue.jpg",
+        "Price" : "15 Lakh"
+    },
+    {
+        "id" : 2,
+        "name": "Yamaha Vmax" ,
+        "type": "Gear" ,
+        "description" : "The Vmax is the only sports cruiser motorcycle in India from Yamaha. The Vmax is powered by 1679cc V4 liquid-cooled engine that produces 200bhp at 9,000rpm and maximum torque of 167Nm at 6,500rpm.",
+        "image": "https://motoroctane.com/wp-content/uploads/2017/05/20130301152321_7031.jpg",
+        "Price" : "27,84,236"
+    },
+    {
+        "id" : 3,
+        "name": "Yamaha FZ X" ,
+        "type": "Gear" ,
+        "description" : "The new Yamaha FZ-X will be available in two variants – standard and with Y-Connect Bluetooth tech. The Yamaha FZ X is powered by 149cc BS6 engine which develops a power of 12.2 bhp and a torque of 13.3 Nm.",
+        "image": "https://ic1.maxabout.us/autos/tw_india//N/2022/9/new-yamaha-fz-x-150-matt-black.jpg",
+        "Price" : "1,35,240"
+    },
+    {
+        "id" : 4,
+        "name": "Yamaha Ray ZR 125" ,
+        "type": "Gearless" ,
+        "description" : "The Yamaha Ray ZR 125 is powered by 125cc BS6 engine which develops a power of 8.04 bhp and a torque of 10.3 Nm. With both front and rear drum brakes, Yamaha Ray ZR 125 comes up with combined braking system of both wheels.",
+        "image": "https://imgd.aeplcdn.com/1280x720/bw/models/yamaha-ray-zr-125-drum20200204202347.jpg",
+        "Price" : "82,781"
+    },
+    {
+        "id" : 5,
+        "name": "Yamaha FZ S FI" ,
+        "type": "Gear" ,
+        "description" : "Yamaha FZ S FI is a street bike available in 2 variants and 5 colours. The Yamaha FZ S FI is powered by 149cc BS6 engine which develops a power of 12.2 bhp and a torque of 13.3 Nm. With both front and rear disc brakes, Yamaha FZ S FI comes up with anti-locking braking system. This FZ S FI bike weighs 135 kg and has a fuel tank capacity of 13 liters.",
+        "image": "https://5.imimg.com/data5/IM/KF/RH/SELLER-10578870/yamaha-fzs-fi-149-cc-armada-blue-motorcycle-500x500.jpg",
+        "Price" : "1,21,979"
+    }
+
+]
+
