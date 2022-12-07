@@ -31,6 +31,7 @@
 		9A52BFF42922A1A800AEC548 /* KeyChainOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BFF32922A1A800AEC548 /* KeyChainOperations.swift */; };
 		9AEF40882924EC3800EB1699 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF40872924EC3800EB1699 /* HomePageViewController.swift */; };
 		9AF47DEB2927E3F600B599DB /* PasswordPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF47DEA2927E3F600B599DB /* PasswordPolicyViewController.swift */; };
+		A96055E229407EA2005B6562 /* BikeCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055E129407EA2005B6562 /* BikeCategories.json */; };
 		A9FBC7FD293F20C700DB9A39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9FBC7FC293F20C700DB9A39 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		9AEF40872924EC3800EB1699 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		9AF47DEA2927E3F600B599DB /* PasswordPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPolicyViewController.swift; sourceTree = "<group>"; };
 		9CB8A40EB9DAAEB8CF56619E /* Pods_Bike_24_7_Bike_24_7UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_24_7_Bike_24_7UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96055E129407EA2005B6562 /* BikeCategories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BikeCategories.json; sourceTree = "<group>"; };
 		A9FBC7FC293F20C700DB9A39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EE264CC80B743512C9EBDD54 /* Pods_Bike_24_7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_24_7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69CDB4B17EBAC85BEA80EF7 /* Pods-Bike_24*7Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bike_24*7Tests.debug.xcconfig"; path = "Target Support Files/Pods-Bike_24*7Tests/Pods-Bike_24*7Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 		A9FBC83F29406C5600DB9A39 /* Json */ = {
 			isa = PBXGroup;
 			children = (
+				A96055E129407EA2005B6562 /* BikeCategories.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				9A52BFC7292290A500AEC548 /* LaunchScreen.storyboard in Resources */,
 				9A52BFC4292290A500AEC548 /* Assets.xcassets in Resources */,
 				9A52BFBF292290A300AEC548 /* Main.storyboard in Resources */,
+				A96055E229407EA2005B6562 /* BikeCategories.json in Resources */,
 				A9FBC7FD293F20C700DB9A39 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
