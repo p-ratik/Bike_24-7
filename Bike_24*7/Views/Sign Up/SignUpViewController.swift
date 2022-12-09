@@ -466,6 +466,7 @@ class SignUpViewController: UIViewController {
                     successAlert.view.tintColor = .systemGreen
                     successAlert.addAction(UIAlertAction(title: "Okay", style: .default, handler: {(action: UIAlertAction!) in self.navigationController?.pushViewController(home!, animated: true)}))
                     self.present(successAlert, animated: true, completion: nil)
+                    currentUser = self.emailTextField.text
                 }
                 else {
                     
