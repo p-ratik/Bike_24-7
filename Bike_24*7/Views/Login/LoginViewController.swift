@@ -54,8 +54,8 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         //resetting text fields
-        usernameTextField.text = "pratik@gmail.com"
-        passwordTextField.text = "Pratik@123"
+        usernameTextField.text = "srishti@gmail.com"
+        passwordTextField.text = "Srishti@12"
         
         //Text Field Border
         usernameTextField.layer.borderWidth = 0.2
@@ -144,7 +144,7 @@ class LoginViewController: UIViewController {
             Auth.auth().signIn(withEmail: usernameTextField.text!, password: passwordTextField.text!, completion: {(result, error) -> Void in
                 
                 if error == nil {
-                    
+                    currentUser = self.usernameTextField.text
                     let customTabBarController = self.storyboard?.instantiateViewController(withIdentifier: "CustomTabBarController")  as! UITabBarController
                     self.navigationController?.pushViewController(customTabBarController, animated: true)
                 }

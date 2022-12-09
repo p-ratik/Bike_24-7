@@ -9,6 +9,7 @@ import UIKit
 import Alamofire
 import FirebaseAuth
 
+var currentUser: String?
 
 class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 

@@ -11,6 +11,8 @@ class BikeModelsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var BikeName: UILabel!
     @IBOutlet weak var modelImageView: UIImageView!
-    @IBOutlet weak var bikeDescription: UILabel!
-    
+    @IBOutlet weak var bikeDescription: UILabel!    
+    @IBOutlet weak var favouriteIconView: UIImageView!
+  
+    @IBOutlet weak var addToFavouriteButtonClicked: UIButton!
 }

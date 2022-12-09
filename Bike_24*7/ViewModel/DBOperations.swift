@@ -94,4 +94,98 @@ class DBOperations: NSObject {
             fatalError("Failed to fetch record.")
         }
     }
+    
+    //insert favorites models into favorite list
+    func insertDataToFavorite(mName: String, mBrand: String, mDesc: String, mPrice: String, mImage: String, mType: String, mUser: User) {
+        
+        let managedObject = AppDelegate.sharedAppDelegateInstance().persistentContainer.viewContext
+        
+        let model = Favourites(context: managedObject)
+        
+        model.modelName = mName
+        model.modelBrand = mBrand
+        model.modelPrice = mPrice
+        model.modelDescription = mDesc
+        model.modelType = mType
+        model.modelImage = mImage
+        model.toUser = mUser
+        
+        do {
+            
+            try managedObject.save()
+        } catch(let error) {
+            
+            print("Failed to Save Details")
+            print(error.localizedDescription)
+        }
+    }
+    
+    func fetchRecordFormFavourite() -> [Favourites] {
+        let managedObject = AppDelegate.sharedAppDelegateInstance().persistentContainer.viewContext
+        
+        let fetchRequest: NSFetchRequest<Favourites> = Favourites.fetchRequest()
+           fetchRequest.returnsObjectsAsFaults = false
+        
+        do {
+            let models = try managedObject.fetch(fetchRequest)
+            return models
+        } catch (let error) {
+            
+               print(error.localizedDescription)
+               fatalError("failed")
+        }
+    }
+    func fetchAllRecordFromUser() -> [User] {
+        let managedObject = AppDelegate.sharedAppDelegateInstance().persistentContainer.viewContext
+        
+        let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
+           fetchRequest.returnsObjectsAsFaults = false
+        
+        do {
+            let users = try managedObject.fetch(fetchRequest)
+            return users
+        } catch (let error) {
+            
+               print(error.localizedDescription)
+               fatalError("failed")
+        }
+    }
+    
+    func insertDataToOrderList(mName: String, mBrand: String, mImage: String, mPrice: String, mUser: User) {
+        
+        let managedObject = AppDelegate.sharedAppDelegateInstance().persistentContainer.viewContext
+        
+        let model = Order(context: managedObject)
+        
+        model.modelName = mName
+        model.modelBrand = mBrand
+        model.modelPrice = mPrice
+        model.modelImage = mImage
+        model.toUser = mUser
+        
+        do {
+            
+            try managedObject.save()
+        } catch(let error) {
+            
+            print("Failed to Save Details")
+            print(error.localizedDescription)
+        }
+    }
+    
+    func fetchRecordFormOrderList() -> [Order] {
+        let managedObject = AppDelegate.sharedAppDelegateInstance().persistentContainer.viewContext
+        
+        let fetchRequest: NSFetchRequest<Order> = Order.fetchRequest()
+           fetchRequest.returnsObjectsAsFaults = false
+        
+        do {
+            let models = try managedObject.fetch(fetchRequest)
+            return models
+        } catch (let error) {
+            
+               print(error.localizedDescription)
+               fatalError("failed")
+        }
+    }
 }

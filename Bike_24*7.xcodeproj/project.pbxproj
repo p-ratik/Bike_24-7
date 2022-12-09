@@ -29,6 +29,9 @@
 		9A52BFED292295BA00AEC548 /* TextFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BFEC292295BA00AEC548 /* TextFieldValidation.swift */; };
 		9A52BFF2292297D800AEC548 /* DBOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BFF1292297D800AEC548 /* DBOperations.swift */; };
 		9A52BFF42922A1A800AEC548 /* KeyChainOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BFF32922A1A800AEC548 /* KeyChainOperations.swift */; };
+		9A5957F82940B9950005B0D0 /* SelectedBikeModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5957F72940B9950005B0D0 /* SelectedBikeModelViewController.swift */; };
+		9A5957FA2941BE400005B0D0 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5957F92941BE400005B0D0 /* FavoriteViewController.swift */; };
+		9A5957FC2941BE710005B0D0 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5957FB2941BE710005B0D0 /* OrderViewController.swift */; };
 		9AEF40882924EC3800EB1699 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF40872924EC3800EB1699 /* HomePageViewController.swift */; };
 		9AF47DEB2927E3F600B599DB /* PasswordPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF47DEA2927E3F600B599DB /* PasswordPolicyViewController.swift */; };
 		A96055E229407EA2005B6562 /* BikeCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055E129407EA2005B6562 /* BikeCategories.json */; };
@@ -96,6 +99,9 @@
 		9A52BFEC292295BA00AEC548 /* TextFieldValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValidation.swift; sourceTree = "<group>"; };
 		9A52BFF1292297D800AEC548 /* DBOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBOperations.swift; sourceTree = "<group>"; };
 		9A52BFF32922A1A800AEC548 /* KeyChainOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainOperations.swift; sourceTree = "<group>"; };
+		9A5957F72940B9950005B0D0 /* SelectedBikeModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBikeModelViewController.swift; sourceTree = "<group>"; };
+		9A5957F92941BE400005B0D0 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		9A5957FB2941BE710005B0D0 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		9AEF40872924EC3800EB1699 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		9AF47DEA2927E3F600B599DB /* PasswordPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPolicyViewController.swift; sourceTree = "<group>"; };
 		9CB8A40EB9DAAEB8CF56619E /* Pods_Bike_24_7_Bike_24_7UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_24_7_Bike_24_7UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +174,9 @@
 				9A4B45E22938AA38003B2A84 /* CategoryCollectionViewCell.swift */,
 				9A4B45E32938AA38003B2A84 /* CategoryCollectionViewCell.xib */,
 				A96055F72940828B005B6562 /* BikeModelsViewController.swift */,
+				9A5957F72940B9950005B0D0 /* SelectedBikeModelViewController.swift */,
+				9A5957F92941BE400005B0D0 /* FavoriteViewController.swift */,
+				9A5957FB2941BE710005B0D0 /* OrderViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -583,9 +592,12 @@
 				9A52BFF42922A1A800AEC548 /* KeyChainOperations.swift in Sources */,
 				A96055FC2940855F005B6562 /* BikeModelJsonParsing.swift in Sources */,
 				9A52BFED292295BA00AEC548 /* TextFieldValidation.swift in Sources */,
+				9A5957F82940B9950005B0D0 /* SelectedBikeModelViewController.swift in Sources */,
 				9A52BFB8292290A300AEC548 /* AppDelegate.swift in Sources */,
+				9A5957FA2941BE400005B0D0 /* FavoriteViewController.swift in Sources */,
 				9AF47DEB2927E3F600B599DB /* PasswordPolicyViewController.swift in Sources */,
 				9A4B45E72938B971003B2A84 /* categoryDataModel.swift in Sources */,
+				9A5957FC2941BE710005B0D0 /* OrderViewController.swift in Sources */,
 				9A52BFBA292290A300AEC548 /* SceneDelegate.swift in Sources */,
 				9A52BFEB292294F400AEC548 /* SignUpViewController.swift in Sources */,
 				A96055FA2940847A005B6562 /* BikeModelsCollectionViewCell.swift in Sources */,
