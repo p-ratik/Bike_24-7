@@ -149,6 +149,16 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
             selectedBikeModelViewController.modelBrand = fileName
             self.navigationController?.pushViewController(selectedBikeModelViewController, animated: true)
         }
+        else if(filtering) {
+            selectedBikeModelViewController.modelName = appliedFilterModels[indexPath.row].name
+            selectedBikeModelViewController.modelType = appliedFilterModels[indexPath.row].type
+            selectedBikeModelViewController.modelDescription = appliedFilterModels[indexPath.row].description
+            selectedBikeModelViewController.modelPrice = appliedFilterModels[indexPath.row].price
+            selectedBikeModelViewController.modelImage = appliedFilterModels[indexPath.row].image
+            selectedBikeModelViewController.modelBrand = fileName
+            
+            self.navigationController?.pushViewController(selectedBikeModelViewController, animated: true)
+        }
         else {
             selectedBikeModelViewController.modelName = BikeModelJsonParsing.bikeArr[indexPath.row].name
             selectedBikeModelViewController.modelType = BikeModelJsonParsing.bikeArr[indexPath.row].type
@@ -156,7 +166,6 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
             selectedBikeModelViewController.modelPrice = BikeModelJsonParsing.bikeArr[indexPath.row].price
             selectedBikeModelViewController.modelImage = BikeModelJsonParsing.bikeArr[indexPath.row].image
             selectedBikeModelViewController.modelBrand = fileName
-            
             self.navigationController?.pushViewController(selectedBikeModelViewController, animated: true)
         }
     }
