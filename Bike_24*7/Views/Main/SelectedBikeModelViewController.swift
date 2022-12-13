@@ -51,19 +51,22 @@ class SelectedBikeModelViewController: UIViewController {
             }
         }
         if (ifFavourite) {
-            favouriteIcon.image = UIImage(named: "redFill.jpg")
+            favouriteIcon.image = UIImage(named: "selected 1.png")
         }
         else {
-            favouriteIcon.image = UIImage(named: "blackHeart.png")
+            favouriteIcon.image = UIImage(named: "notSelect 1.png")
         }
     }
     
     @IBAction func selectedBikeModelBackButtonClicked(_ sender: Any) {
-        if let navController = self.navigationController {
-            navController.popViewController(animated: true)
-        }
+//        if let navController = self.navigationController {
+//            navController.popViewController(animated: true)
+//        }
+        let bikeModelViewController = self.storyboard?.instantiateViewController(withIdentifier: "BikeModelsViewController") as! BikeModelsViewController
+        self.navigationController?.pushViewController(bikeModelViewController, animated: true)
+        bikeModelViewController.fileName = modelBrand
     }
-    
+
     @IBAction func orderNowButtonClicked(_ sender: Any) {
 //        let orderViewController = self.storyboard?.instantiateViewController(withIdentifier: "OrderViewController") as! OrderViewController
 //        self.navigationController?.pushViewController(orderViewController, animated: true)
@@ -75,7 +78,7 @@ class SelectedBikeModelViewController: UIViewController {
     
     
     @IBAction func tappedOnFavoriteIcon(_ sender: Any) {
-        favouriteIcon.image = UIImage(named: "redFill.jpg")
+        favouriteIcon.image = UIImage(named: "selected 1.jpg")
         guard let cUser = user else {return}
         DBOperations.dbOperationInstance().insertDataToFavorite(mName: modelName, mBrand: modelBrand, mDesc: modelDescription, mPrice: modelPrice, mImage: modelImage, mType: modelType, mUser: cUser)
         

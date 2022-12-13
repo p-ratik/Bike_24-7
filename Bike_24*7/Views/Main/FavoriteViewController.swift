@@ -77,8 +77,7 @@ class FavoriteViewController: UIViewController, UICollectionViewDelegate, UIColl
         let mImage = models[indexpath1.row].modelImage
         let mPrice = models[indexpath1.row].modelPrice
         guard let cUser = user else {return}
-        let orderViewController = self.storyboard?.instantiateViewController(withIdentifier: "OrderViewController") as! OrderViewController
-        self.navigationController?.pushViewController(orderViewController, animated: true)
+        self.showOrderPlacedAlert(itemName: mName ?? "", mssg: "Order Placed Successfully", title: "Congratulation")
         DBOperations.dbOperationInstance().insertDataToOrderList(mName: mName!, mBrand: mBrand!, mImage: mImage!, mPrice: mPrice!, mUser: cUser)
     }
     /*

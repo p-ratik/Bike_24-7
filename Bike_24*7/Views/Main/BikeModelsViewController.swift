@@ -56,10 +56,10 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
                 }
             }
             if (ifFavourite) {
-                favouriteIcon = UIImage(named: "selected.jpg")
+                favouriteIcon = UIImage(named: "selected 1.png")
             }
             else {
-                favouriteIcon = UIImage(named: "notSelect.jpg")
+                favouriteIcon = UIImage(named: "notSelect 1.png")
             }
             cell.addToFavouriteButtonClicked.setImage(favouriteIcon, for: UIControl.State.normal)
             cell.addToFavouriteButtonClicked.addTarget(self, action: #selector(addToFavourite), for: .touchUpInside)
@@ -82,10 +82,10 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
                 }
             }
             if (ifFavourite) {
-                favouriteIcon = UIImage(named: "selected.jpg")
+                favouriteIcon = UIImage(named: "selected 1.png")
             }
             else {
-                favouriteIcon = UIImage(named: "notSelect.jpg")
+                favouriteIcon = UIImage(named: "notSelect 1.png")
             }
             cell.addToFavouriteButtonClicked.setImage(favouriteIcon, for: UIControl.State.normal)
             cell.addToFavouriteButtonClicked.addTarget(self, action: #selector(addToFavourite), for: .touchUpInside)
@@ -108,10 +108,10 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
                 }
             }
             if (ifFavourite) {
-                favouriteIcon = UIImage(named: "selected.jpg")
+                favouriteIcon = UIImage(named: "selected 1.png")
             }
             else {
-                favouriteIcon = UIImage(named: "notSelect.jpg")
+                favouriteIcon = UIImage(named: "notSelect 1.png")
             }
             cell.addToFavouriteButtonClicked.setImage(favouriteIcon, for: UIControl.State.normal)
             cell.addToFavouriteButtonClicked.addTarget(self, action: #selector(addToFavourite), for: .touchUpInside)
@@ -178,15 +178,12 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Do any additional setup after loading the view.
         user = DBOperations.dbOperationInstance().fetchMatchedRecord(email: currentUser ?? "")
-        
-        
         self.bikeModelsCollectionView.delegate = self
         self.bikeModelsCollectionView.dataSource = self
         self.bikeModelSearchBar.delegate = self
         
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
