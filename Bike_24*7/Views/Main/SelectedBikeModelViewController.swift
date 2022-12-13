@@ -65,10 +65,12 @@ class SelectedBikeModelViewController: UIViewController {
     }
     
     @IBAction func orderNowButtonClicked(_ sender: Any) {
-        let orderViewController = self.storyboard?.instantiateViewController(withIdentifier: "OrderViewController") as! OrderViewController
-        self.navigationController?.pushViewController(orderViewController, animated: true)
+//        let orderViewController = self.storyboard?.instantiateViewController(withIdentifier: "OrderViewController") as! OrderViewController
+//        self.navigationController?.pushViewController(orderViewController, animated: true)
         guard let cUser = user else {return}
         DBOperations.dbOperationInstance().insertDataToOrderList(mName: modelName, mBrand: modelBrand, mImage: modelImage, mPrice: modelPrice, mUser: cUser)
+        self.showOrderPlacedAlert(itemName: modelName, mssg: "Order Placed Successfully!", title: "Congratulations")
+        
     }
     
     
@@ -87,5 +89,17 @@ class SelectedBikeModelViewController: UIViewController {
          }
          */
         
+    }
+}
+
+extension UIViewController {
+        func showOrderPlacedAlert(itemName: String, mssg: String, title: String) {
+        let alert = UIAlertController(title: title, message: itemName + "-" + mssg, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default) {
+            _ in
+            let customTabBarController = self.storyboard?.instantiateViewController(withIdentifier: "CustomTabBarController")  as! UITabBarController
+            self.navigationController?.pushViewController(customTabBarController, animated: true)
+        })
+        self.present(alert, animated: true)
     }
 }

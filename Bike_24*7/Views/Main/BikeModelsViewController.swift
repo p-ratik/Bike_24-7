@@ -141,11 +141,11 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedBikeModelViewController = self.storyboard?.instantiateViewController(withIdentifier: "SelectedBikeModelViewController") as! SelectedBikeModelViewController
         if(searching) {
-            selectedBikeModelViewController.modelName = BikeModelJsonParsing.bikeArr[indexPath.row].name
-            selectedBikeModelViewController.modelType = BikeModelJsonParsing.bikeArr[indexPath.row].type
-            selectedBikeModelViewController.modelDescription = BikeModelJsonParsing.bikeArr[indexPath.row].description
-            selectedBikeModelViewController.modelPrice = BikeModelJsonParsing.bikeArr[indexPath.row].price
-            selectedBikeModelViewController.modelImage = BikeModelJsonParsing.bikeArr[indexPath.row].image
+            selectedBikeModelViewController.modelName = filteredBikeModels[indexPath.row].name
+            selectedBikeModelViewController.modelType = filteredBikeModels[indexPath.row].type
+            selectedBikeModelViewController.modelDescription = filteredBikeModels[indexPath.row].description
+            selectedBikeModelViewController.modelPrice = filteredBikeModels[indexPath.row].price
+            selectedBikeModelViewController.modelImage = filteredBikeModels[indexPath.row].image
             selectedBikeModelViewController.modelBrand = fileName
             self.navigationController?.pushViewController(selectedBikeModelViewController, animated: true)
         }
