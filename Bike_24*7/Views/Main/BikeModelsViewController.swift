@@ -122,7 +122,7 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
             cell.addToFavouriteButtonClicked.tag = indexPath.row
             
         }
-        cell.layer.borderWidth = 0.7
+        cell.layer.borderWidth = 0.5
         cell.layer.cornerRadius = 10
         return cell
     }
