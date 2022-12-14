@@ -22,9 +22,9 @@ class ProfileViewController: UIViewController {
         yourWishlisButtonOutlet.layer.cornerRadius = 10
         yourOrderButtonOutlet.layer.cornerRadius = 10
         guard let user = DBOperations.dbOperationInstance().fetchMatchedRecord(email: currentUser!) else {return}
-        profileNameLabel.text = "User Name:  \(user.name ?? "")"
-        profileEmailLabel.text = "User Email ID:   \(user.email ?? "")"
-        profileMobileLabel.text = "User Mobile Number:  \(user.mobile ?? "")"
+        profileNameLabel.text = "Name:  \(user.name ?? "")"
+        profileEmailLabel.text = "Email ID:   \(user.email ?? "")"
+        profileMobileLabel.text = "Mobile Number:  \(user.mobile ?? "")"
     }
     
     @IBAction func yourWishlistButtonClicked(_ sender: Any) {
