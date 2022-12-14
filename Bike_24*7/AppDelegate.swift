@@ -10,13 +10,23 @@ import CoreData
 import Firebase
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate  {
 
-
+    let notificationCenter = UNUserNotificationCenter.current()
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        notificationCenter.delegate = self
         
+        //for asking notification permission
+        let options: UNAuthorizationOptions = [.alert, .sound, .badge]
+        notificationCenter.requestAuthorization(options: options) {
+            (didAllow, error) in
+            if !didAllow {
+                print("user has declined notifications")
+            }
+        }
         //MARK: Firebase
         FirebaseApp.configure()
         return true

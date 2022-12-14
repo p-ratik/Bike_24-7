@@ -20,6 +20,8 @@ class SelectedBikeModelViewController: UIViewController {
     @IBOutlet weak var modelDescriptionLabel: UILabel!
     @IBOutlet weak var favouriteIcon: UIImageView!
     
+    @IBOutlet weak var selectedBikeTitle: UILabel!
+    
     var modelName = ""
     var modelType = ""
     var modelDescription = ""
@@ -38,6 +40,7 @@ class SelectedBikeModelViewController: UIViewController {
         modelBrandLabel.text = modelBrand
         modelDescriptionLabel.text = modelDescription
         modelPriceLabel.text = modelPrice
+        selectedBikeTitle.text = modelName
         Alamofire.request(modelImage).responseJSON(completionHandler: {response in
             self.modelImageView.image = UIImage(data: response.data!)
         })
@@ -73,6 +76,8 @@ class SelectedBikeModelViewController: UIViewController {
         guard let cUser = user else {return}
         DBOperations.dbOperationInstance().insertDataToOrderList(mName: modelName, mBrand: modelBrand, mImage: modelImage, mPrice: modelPrice, mUser: cUser)
         self.showOrderPlacedAlert(itemName: modelName, mssg: "Order Placed Successfully!", title: "Congratulations")
+        let localNotificationObj = LocalNotificationClass()
+        localNotificationObj.receiveNotification(itemName: modelName)
         
     }
     
