@@ -172,10 +172,12 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(profileVC, animated: true)
             break
         case "About Us":
-            print("about us")
+            let aboutVC = self.storyboard?.instantiateViewController(withIdentifier: "AboutUsViewController") as! AboutUsViewController
+            self.navigationController?.pushViewController(aboutVC, animated: true)
             break
         case "Contact Us":
-            print("contact us")
+            let contactVC = self.storyboard?.instantiateViewController(withIdentifier: "ContactViewController") as! ContactViewController
+            self.navigationController?.pushViewController(contactVC, animated: true)
             break
         case "Sign Out":
             do {
