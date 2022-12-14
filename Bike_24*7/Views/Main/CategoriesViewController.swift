@@ -39,10 +39,9 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
         isSideViewOpen = false
         
         let searchTextField = self.categorySearchBar.searchTextField
-        searchTextField.textColor = UIColor.white
+        searchTextField.textColor = UIColor.black
         searchTextField.font  = .systemFont(ofSize: 20, weight: .bold)
-        searchTextField.backgroundColor = UIColor.black
-        
+        searchTextField.tintColor = UIColor.white
         CategoryJsonParsing.jsonCall()
         
     }
@@ -72,6 +71,14 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
                 cell.brandLogo.image = UIImage(data: response.data!)
             })
         }
+        cell.brandLogo.layer.borderWidth = 0.5
+        cell.brandLogo.clipsToBounds = true
+        cell.brandLogo.layer.cornerRadius = cell.brandLogo.frame.height/2
+        cell.brandLogo.contentMode = .scaleAspectFit
+        cell.brandLogo.layer.shadowRadius = 1
+        cell.brandLogo.layer.shadowOffset = CGSize(width: -1, height: 1)
+        cell.brandLogo.layer.shadowOpacity = 0.5
+        cell.brandLogo.layer.shadowColor = UIColor.black.cgColor
         return cell
     }
     
@@ -158,9 +165,35 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch(menuData[indexPath.row]) {
+        case "Profile":
+            let profileVC = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+            self.navigationController?.pushViewController(profileVC, animated: true)
+            break
+        case "About Us":
+            print("about us")
+            break
+        case "Contact Us":
+            print("contact us")
+            break
+        case "Sign Out":
+            do {
+                //Signing out of firebase
+                try Auth.auth().signOut()
+                
+                //Navigating back to login view
+                self.navigationController?.popToRootViewController(animated: true)
+            } catch(let error) {
+                
+                print(error.localizedDescription)
+            }
+            break
+        default:
+            print("no match")
+        }
+    }
+    
     
     
 }

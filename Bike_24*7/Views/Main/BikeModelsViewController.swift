@@ -22,6 +22,10 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bikeModelsCollectionView: UICollectionView!
     
+    @IBOutlet weak var allFilterButtonOutlet: UIButton!
+    
+    @IBOutlet weak var gearlessFilterButtonOutlet: UIButton!
+    @IBOutlet weak var gearFilterButtonOutlet: UIButton!
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if(searching) {
             return filteredBikeModels.count
@@ -117,9 +121,9 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
             cell.addToFavouriteButtonClicked.addTarget(self, action: #selector(addToFavourite), for: .touchUpInside)
             cell.addToFavouriteButtonClicked.tag = indexPath.row
             
-            cell.layer.borderWidth = 0.7
         }
-        
+        cell.layer.borderWidth = 0.7
+        cell.layer.cornerRadius = 10
         return cell
     }
   
@@ -190,9 +194,12 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
         BikeModelJsonParsing.fetchJsonCall(filename: fileName )
         
         let searchTextField = self.bikeModelSearchBar.searchTextField
-        searchTextField.textColor = UIColor.white
+        searchTextField.textColor = UIColor.black
         searchTextField.font  = .systemFont(ofSize: 20, weight: .bold)
-        searchTextField.backgroundColor = UIColor.black
+        searchTextField.tintColor = UIColor.black
+        allFilterButtonOutlet.layer.cornerRadius = 10
+        gearFilterButtonOutlet.layer.cornerRadius = 10
+        gearlessFilterButtonOutlet.layer.cornerRadius = 10
         titleLabel.text = fileName
         
     }
@@ -203,11 +210,17 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     @IBAction func allButtonClicked(_ sender: Any) {
+        allFilterButtonOutlet.backgroundColor = .systemGray4
+        gearFilterButtonOutlet.backgroundColor = .systemGray6
+        gearlessFilterButtonOutlet.backgroundColor = .systemGray6
         ifFavourite = false
         filtering = false
         self.bikeModelsCollectionView.reloadData()
     }
     @IBAction func gearFilterButtonClicked(_ sender: Any) {
+        allFilterButtonOutlet.backgroundColor = .systemGray6
+        gearFilterButtonOutlet.backgroundColor = .systemGray4
+        gearlessFilterButtonOutlet.backgroundColor = .systemGray6
         ifFavourite = false
         let allBikes = BikeModelJsonParsing.bikeArr
         appliedFilterModels = allBikes.filter({$0.type == "Gear"})
@@ -217,6 +230,9 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
     
     
     @IBAction func gearLessFilterButtonClicked(_ sender: Any) {
+        allFilterButtonOutlet.backgroundColor = .systemGray6
+        gearFilterButtonOutlet.backgroundColor = .systemGray6
+        gearlessFilterButtonOutlet.backgroundColor = .systemGray4
         ifFavourite = false
         let allBikes = BikeModelJsonParsing.bikeArr
         appliedFilterModels = allBikes.filter({$0.type == "Gearless"})

@@ -23,7 +23,7 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var modelPrice = ""
     var modelImage = ""
     var orderBikes: [Order] = []
-    
+    var profile = false
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -60,9 +60,15 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
 
-    @IBAction func OrderBackButtonClicked(_ sender: Any) {
-        if let navVC = self.navigationController {
-            navVC.popViewController(animated: true)
+   
+    @IBAction func orderBackButtonClicked(_ sender: Any) {
+        if (profile) {
+            let profileVC = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController")  as! ProfileViewController
+            self.navigationController?.pushViewController(profileVC, animated: true)
+        }
+        else {
+            let customTabBarController = self.storyboard?.instantiateViewController(withIdentifier: "CustomTabBarController")  as! UITabBarController
+            self.navigationController?.pushViewController(customTabBarController, animated: true)
         }
     }
     /*

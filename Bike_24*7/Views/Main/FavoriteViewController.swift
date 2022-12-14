@@ -30,6 +30,7 @@ class FavoriteViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet weak var favouriteModelCollectionView: UICollectionView!
     var models: [Favourites] = []
     var user: User?
+    var profile = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,6 +80,17 @@ class FavoriteViewController: UIViewController, UICollectionViewDelegate, UIColl
         guard let cUser = user else {return}
         self.showOrderPlacedAlert(itemName: mName ?? "", mssg: "Order Placed Successfully", title: "Congratulation")
         DBOperations.dbOperationInstance().insertDataToOrderList(mName: mName!, mBrand: mBrand!, mImage: mImage!, mPrice: mPrice!, mUser: cUser)
+    }
+    
+    @IBAction func favouriteBackButtonClicked(_ sender: Any) {
+        if (profile) {
+            let profileVC = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController")  as! ProfileViewController
+            self.navigationController?.pushViewController(profileVC, animated: true)
+        }
+        else {
+            let customTabBarController = self.storyboard?.instantiateViewController(withIdentifier: "CustomTabBarController")  as! UITabBarController
+            self.navigationController?.pushViewController(customTabBarController, animated: true)
+        }
     }
     /*
     // MARK: - Navigation
