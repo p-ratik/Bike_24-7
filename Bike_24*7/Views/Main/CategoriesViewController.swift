@@ -15,9 +15,13 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
 
     @IBOutlet weak var categoriesCollectionView: UICollectionView!
     @IBOutlet weak var categorySearchBar: UISearchBar!
+    @IBOutlet weak var sideView: UIView!
+    @IBOutlet weak var sideBar: UITableView!
     
     var searching = false
     var filteredCategories = [Category]()
+    var menuData = ["Profile", "About Us", "Contact Us", "Sign Out"]
+    var isSideViewOpen: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,26 +35,17 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        sideView.isHidden = true
+        isSideViewOpen = false
+        
         let searchTextField = self.categorySearchBar.searchTextField
         searchTextField.textColor = UIColor.white
         searchTextField.font  = .systemFont(ofSize: 20, weight: .bold)
         searchTextField.backgroundColor = UIColor.black
         
         CategoryJsonParsing.jsonCall()
+        
     }
-    
-    @IBAction func signUpButtonClicked(_ sender: Any) {
-        do {
-            //Signing out of firebase
-            try Auth.auth().signOut()
-            
-            //Navigating back to login view
-            self.navigationController?.popToRootViewController(animated: true)
-        } catch(let error) {
-            print(error.localizedDescription)
-        }
-    }
-    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if searching {
@@ -97,6 +92,34 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 190, height: 250)
     }
+    
+    @IBAction func btnMenuClicked(_ sender: Any) {
+        sideView.isHidden = false
+        sideBar.isHidden = false
+        self.view.bringSubviewToFront(sideView)
+        if(!isSideViewOpen) {
+            isSideViewOpen = true
+            sideView.frame = CGRect(x: 0, y: 104, width: 0, height: 739)
+            sideBar.frame = CGRect(x: 0, y: 0, width: 0, height: 739)
+            UIView.animate(withDuration: 0.1) { [self] in
+                sideView.frame = CGRect(x: 0, y: 104, width: 268, height: 739)
+                sideBar.frame = CGRect(x: 0, y: 0, width: 268, height: 739)
+            }
+        }
+        else {
+            isSideViewOpen = false
+            sideView.isHidden = true
+            sideBar.isHidden = true
+            sideView.frame = CGRect(x: 0, y: 104, width: 268, height: 739)
+            sideBar.frame = CGRect(x: 0, y: 0, width: 268, height: 739)
+            UIView.animate(withDuration: 0.2) { [self] in
+                sideView.frame = CGRect(x: 0, y: 104, width: 0, height: 739)
+                sideBar.frame = CGRect(x: 0, y: 0, width: 0, height: 739)
+            }
+        }
+        
+    }
+    
 }
 
 extension CategoriesViewController: UISearchBarDelegate {
@@ -121,4 +144,23 @@ extension CategoriesViewController: UISearchBarDelegate {
         }
         categoriesCollectionView.reloadData()
     }
+}
+
+extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return menuData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = sideBar.dequeueReusableCell(withIdentifier: "MenuTableViewCell") as! MenuTableViewCell
+        cell.menuItem.text = menuData[indexPath.row]
+        return cell
+        
+    }
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        <#code#>
+//    }
+    
+    
 }
