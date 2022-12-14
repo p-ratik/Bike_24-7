@@ -38,6 +38,9 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
         sideView.isHidden = true
         isSideViewOpen = false
         
+        sideView.layer.borderWidth = 0.2
+        
+        
         let searchTextField = self.categorySearchBar.searchTextField
         searchTextField.textColor = UIColor.black
         searchTextField.font  = .systemFont(ofSize: 20, weight: .bold)

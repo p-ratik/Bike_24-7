@@ -405,6 +405,7 @@
                                                         <constraint firstItem="Tfh-zh-qsM" firstAttribute="top" secondItem="0sX-n9-sJf" secondAttribute="topMargin" constant="10" id="zw3-5K-eo3"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
                                                     <outlet property="menuItem" destination="Tfh-zh-qsM" id="l9R-2m-Vef"/>
                                                 </connections>
@@ -579,6 +580,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="j8o-JC-YXh" kind="relationship" relationship="viewControllers" id="pml-6W-TC9"/>

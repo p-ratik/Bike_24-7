@@ -79,6 +79,8 @@ class FavoriteViewController: UIViewController, UICollectionViewDelegate, UIColl
         let mPrice = models[indexpath1.row].modelPrice
         guard let cUser = user else {return}
         self.showOrderPlacedAlert(itemName: mName ?? "", mssg: "Order Placed Successfully", title: "Congratulation")
+        let localNotificationObj = LocalNotificationClass()
+        localNotificationObj.receiveNotification(itemName: mName!)
         DBOperations.dbOperationInstance().insertDataToOrderList(mName: mName!, mBrand: mBrand!, mImage: mImage!, mPrice: mPrice!, mUser: cUser)
     }
     
