@@ -461,10 +461,11 @@ class SignUpViewController: UIViewController {
                     DBOperations.dbOperationInstance().insertDataToUser(name: nameTextField.text!, email: emailTextField.text!.lowercased(), mobile: mobileTextField.text!, password: passwordTextField.text!)
                     
                     //MARK: Success Alert
-                    let successAlert = UIAlertController(title: "Sign Up Success!!", message: "User Created Successfully.", preferredStyle: .alert)
-                    let home = self.storyboard?.instantiateViewController(withIdentifier: "CategoriesViewController")
+                    let successAlert = UIAlertController(title: "Sign Up Success!!", message: "Account Created Successfully.", preferredStyle: .alert)
+                    let customTabBarController = self.storyboard?.instantiateViewController(withIdentifier: "CustomTabBarController")  as! UITabBarController
+                    
                     successAlert.view.tintColor = .systemGreen
-                    successAlert.addAction(UIAlertAction(title: "Okay", style: .default, handler: {(action: UIAlertAction!) in self.navigationController?.pushViewController(home!, animated: true)}))
+                    successAlert.addAction(UIAlertAction(title: "Okay", style: .default, handler: {(action: UIAlertAction!) in self.navigationController?.pushViewController(customTabBarController, animated: true)}))
                     self.present(successAlert, animated: true, completion: nil)
                     currentUser = self.emailTextField.text
                 }
