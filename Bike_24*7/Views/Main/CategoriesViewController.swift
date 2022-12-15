@@ -80,8 +80,8 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
         cell.layer.masksToBounds = false
         cell.layer.shadowRadius = 3.0
         cell.layer.shadowOffset = CGSize(width: 0, height: 0)
-        cell.layer.shadowOpacity = 0.5
-        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOpacity = 0.7
+        cell.layer.shadowColor = UIColor.gray.cgColor
         return cell
     }
     
