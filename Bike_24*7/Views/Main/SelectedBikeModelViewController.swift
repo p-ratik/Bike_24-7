@@ -62,17 +62,12 @@ class SelectedBikeModelViewController: UIViewController {
     }
     
     @IBAction func selectedBikeModelBackButtonClicked(_ sender: Any) {
-//        if let navController = self.navigationController {
-//            navController.popViewController(animated: true)
-//        }
         let bikeModelViewController = self.storyboard?.instantiateViewController(withIdentifier: "BikeModelsViewController") as! BikeModelsViewController
         self.navigationController?.pushViewController(bikeModelViewController, animated: true)
         bikeModelViewController.fileName = modelBrand
     }
 
     @IBAction func orderNowButtonClicked(_ sender: Any) {
-//        let orderViewController = self.storyboard?.instantiateViewController(withIdentifier: "OrderViewController") as! OrderViewController
-//        self.navigationController?.pushViewController(orderViewController, animated: true)
         guard let cUser = user else {return}
         DBOperations.dbOperationInstance().insertDataToOrderList(mName: modelName, mBrand: modelBrand, mImage: modelImage, mPrice: modelPrice, mUser: cUser)
         self.showOrderPlacedAlert(itemName: modelName, mssg: "Order Placed Successfully!", title: "Congratulations")
