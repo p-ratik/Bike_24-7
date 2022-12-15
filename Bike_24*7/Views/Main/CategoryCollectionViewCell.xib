@@ -40,6 +40,7 @@
                 <constraint firstItem="4Ye-et-Mzv" firstAttribute="top" secondItem="uvh-D2-PON" secondAttribute="bottom" constant="10" id="jdI-hy-Fom"/>
                 <constraint firstAttribute="trailing" secondItem="4Ye-et-Mzv" secondAttribute="trailing" constant="10" id="oze-aS-Hhu"/>
                 <constraint firstItem="uvh-D2-PON" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="rO1-fJ-d0Y"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4Ye-et-Mzv" secondAttribute="bottom" constant="30.5" id="y4E-op-5SN"/>
             </constraints>
             <size key="customSize" width="189" height="244"/>
             <connections>
