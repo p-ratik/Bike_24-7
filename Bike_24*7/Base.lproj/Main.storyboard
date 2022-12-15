@@ -269,7 +269,7 @@
                                     <constraint firstAttribute="height" constant="50" id="zop-nw-Rm8"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -550,7 +550,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0D-Vf-Rud">
                                 <rect key="frame" x="8" y="54.999999999999993" width="37" height="30.666666666666664"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -728,7 +728,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRC-EI-jVC">
                                 <rect key="frame" x="8" y="54.999999999999993" width="37" height="30.666666666666664"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -1359,9 +1359,9 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHn-Xv-DQo">
-                                <rect key="frame" x="8" y="55" width="37" height="31"/>
+                                <rect key="frame" x="8" y="55" width="45.333333333333336" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
                                     <attributedString key="attributedTitle"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
@@ -1527,12 +1527,12 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwz-ES-Zqg">
-                                <rect key="frame" x="8" y="43" width="37" height="50"/>
+                                <rect key="frame" x="8" y="43" width="45.333333333333336" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="fhh-VI-KIL"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="">
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system" title="">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -1646,9 +1646,9 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLy-bG-XXX">
-                                <rect key="frame" x="8" y="53.999999999999993" width="37" height="30.666666666666664"/>
+                                <rect key="frame" x="8" y="53.999999999999993" width="45.333333333333336" height="30.666666666666664"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -1709,9 +1709,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Daa-Fj-Zm6">
-                                <rect key="frame" x="8" y="54.999999999999993" width="37" height="30.666666666666664"/>
+                                <rect key="frame" x="8" y="54.999999999999993" width="45.333333333333336" height="30.666666666666664"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -1791,8 +1791,8 @@ DQ
         <image name="Menu" width="30" height="30"/>
         <image name="Profile" width="860" height="681"/>
         <image name="archivebox" catalog="system" width="128" height="106"/>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="bikeLogo" width="350" height="350"/>
-        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="chevron.backward.2" catalog="system" width="128" height="105"/>
         <image name="exclamationmark.triangle.fill" catalog="system" width="128" height="112"/>
         <image name="hand.point.right.fill" catalog="system" width="128" height="99"/>

@@ -35,7 +35,6 @@
 		9A5957FE2949D58A0005B0D0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5957FD2949D58A0005B0D0 /* ProfileViewController.swift */; };
 		9A5958002949F66F0005B0D0 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5957FF2949F66F0005B0D0 /* AboutUsViewController.swift */; };
 		9A5958022949F68A0005B0D0 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5958012949F68A0005B0D0 /* ContactViewController.swift */; };
-		9AEF40882924EC3800EB1699 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF40872924EC3800EB1699 /* HomePageViewController.swift */; };
 		9AF47DEB2927E3F600B599DB /* PasswordPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF47DEA2927E3F600B599DB /* PasswordPolicyViewController.swift */; };
 		A96055E229407EA2005B6562 /* BikeCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055E129407EA2005B6562 /* BikeCategories.json */; };
 		A96055E429407F7B005B6562 /* Suzuki.json in Resources */ = {isa = PBXBuildFile; fileRef = A96055E329407F7B005B6562 /* Suzuki.json */; };
@@ -110,7 +109,6 @@
 		9A5957FD2949D58A0005B0D0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9A5957FF2949F66F0005B0D0 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		9A5958012949F68A0005B0D0 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
-		9AEF40872924EC3800EB1699 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		9AF47DEA2927E3F600B599DB /* PasswordPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPolicyViewController.swift; sourceTree = "<group>"; };
 		9CB8A40EB9DAAEB8CF56619E /* Pods_Bike_24_7_Bike_24_7UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bike_24_7_Bike_24_7UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96055E129407EA2005B6562 /* BikeCategories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BikeCategories.json; sourceTree = "<group>"; };
@@ -281,7 +279,6 @@
 				9A4B45D9293891F4003B2A84 /* Main */,
 				9AC189FF292BD7FB000D49DC /* Sign Up */,
 				9AC189FE292BD7ED000D49DC /* Login */,
-				9AEF40872924EC3800EB1699 /* HomePageViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -608,7 +605,6 @@
 				9A4B45DB2938923A003B2A84 /* CategoriesViewController.swift in Sources */,
 				9A4B45E92938B9B2003B2A84 /* CategoryJsonParsing.swift in Sources */,
 				9A52BFF2292297D800AEC548 /* DBOperations.swift in Sources */,
-				9AEF40882924EC3800EB1699 /* HomePageViewController.swift in Sources */,
 				9A4B45E42938AA38003B2A84 /* CategoryCollectionViewCell.swift in Sources */,
 				A96055F82940828B005B6562 /* BikeModelsViewController.swift in Sources */,
 				9A52BFBC292290A300AEC548 /* LoginViewController.swift in Sources */,
