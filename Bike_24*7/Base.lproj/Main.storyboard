@@ -371,30 +371,41 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuTableViewCell" id="rEF-dt-Yqd" customClass="MenuTableViewCell" customModule="Bike_24_7" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="44.666666030883789" width="268" height="63"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuTableViewCell" rowHeight="74" id="rEF-dt-Yqd" customClass="MenuTableViewCell" customModule="Bike_24_7" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44.666666030883789" width="268" height="74"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rEF-dt-Yqd" id="0sX-n9-sJf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="268" height="63"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="268" height="74"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sXr-G8-wXA">
+                                                            <rect key="frame" x="16" y="21" width="30" height="32"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="1dY-y7-Z45"/>
+                                                                <constraint firstAttribute="height" constant="30" id="BnY-uW-vA2"/>
+                                                            </constraints>
+                                                        </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfh-zh-qsM">
-                                                            <rect key="frame" x="26" y="21" width="216" height="21"/>
+                                                            <rect key="frame" x="54" y="19" width="198" height="36"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="Tfh-zh-qsM" secondAttribute="bottom" constant="10" id="CMP-BG-yMq"/>
-                                                        <constraint firstItem="Tfh-zh-qsM" firstAttribute="leading" secondItem="0sX-n9-sJf" secondAttribute="leadingMargin" constant="10" id="Zdt-DF-P3z"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="Tfh-zh-qsM" secondAttribute="trailing" constant="10" id="dhY-y9-Dbc"/>
-                                                        <constraint firstItem="Tfh-zh-qsM" firstAttribute="top" secondItem="0sX-n9-sJf" secondAttribute="topMargin" constant="10" id="zw3-5K-eo3"/>
+                                                        <constraint firstItem="Tfh-zh-qsM" firstAttribute="leading" secondItem="sXr-G8-wXA" secondAttribute="trailing" constant="8" symbolic="YES" id="Ex1-rR-vTN"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="Tfh-zh-qsM" secondAttribute="bottom" constant="8" id="HDp-cX-s8k"/>
+                                                        <constraint firstItem="sXr-G8-wXA" firstAttribute="leading" secondItem="0sX-n9-sJf" secondAttribute="leadingMargin" id="LCO-NE-b6d"/>
+                                                        <constraint firstItem="Tfh-zh-qsM" firstAttribute="top" secondItem="0sX-n9-sJf" secondAttribute="topMargin" constant="8" id="MST-4k-hMh"/>
+                                                        <constraint firstItem="Tfh-zh-qsM" firstAttribute="trailing" secondItem="0sX-n9-sJf" secondAttribute="trailingMargin" id="tQw-RV-pmy"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="sXr-G8-wXA" secondAttribute="bottom" constant="10" id="uPc-gU-Fhg"/>
+                                                        <constraint firstItem="sXr-G8-wXA" firstAttribute="top" secondItem="0sX-n9-sJf" secondAttribute="topMargin" constant="10" id="v7f-O1-8o5"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
                                                     <outlet property="menuItem" destination="Tfh-zh-qsM" id="l9R-2m-Vef"/>
+                                                    <outlet property="sideBarMenuIcon" destination="sXr-G8-wXA" id="Top-Hk-aBK"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>

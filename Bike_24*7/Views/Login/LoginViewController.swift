@@ -54,8 +54,8 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         //resetting text fields
-        usernameTextField.text = ""
-        passwordTextField.text = ""
+        usernameTextField.text = "pratik@gmail.com"
+        passwordTextField.text = "Pratik@123"
         
         //Text Field Border
         usernameTextField.layer.borderWidth = 0.2

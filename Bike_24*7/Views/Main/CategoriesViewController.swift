@@ -21,6 +21,7 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
     var searching = false
     var filteredCategories = [Category]()
     var menuData = ["Profile", "About Us", "Contact Us", "Sign Out"]
+    var menuIcon = ["MenuProfile.png", "About.png", "Contact.png", "SignOut.png"]
     var isSideViewOpen: Bool = false
     
     override func viewDidLoad() {
@@ -163,6 +164,7 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = sideBar.dequeueReusableCell(withIdentifier: "MenuTableViewCell") as! MenuTableViewCell
         cell.menuItem.text = menuData[indexPath.row]
+        cell.sideBarMenuIcon.image = UIImage(named: menuIcon[indexPath.row])
         return cell
         
     }
