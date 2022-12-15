@@ -74,14 +74,13 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
                 cell.brandLogo.image = UIImage(data: response.data!)
             })
         }
-        cell.brandLogo.layer.borderWidth = 0.5
-        cell.brandLogo.clipsToBounds = true
-        cell.brandLogo.layer.cornerRadius = cell.brandLogo.frame.height/2
-        cell.brandLogo.contentMode = .scaleAspectFit
-        cell.brandLogo.layer.shadowRadius = 1
-        cell.brandLogo.layer.shadowOffset = CGSize(width: -1, height: 1)
-        cell.brandLogo.layer.shadowOpacity = 0.5
-        cell.brandLogo.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 0.5
+        cell.layer.cornerRadius = 15.0
+        cell.layer.masksToBounds = false
+        cell.layer.shadowRadius = 3.0
+        cell.layer.shadowOffset = CGSize(width: 0, height: 0)
+        cell.layer.shadowOpacity = 0.5
+        cell.layer.shadowColor = UIColor.black.cgColor
         return cell
     }
     
@@ -100,7 +99,7 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 190, height: 250)
+        return CGSize(width: 190, height: 230)
     }
     
     @IBAction func btnMenuClicked(_ sender: Any) {

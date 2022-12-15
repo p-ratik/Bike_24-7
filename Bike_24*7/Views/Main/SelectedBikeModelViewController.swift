@@ -20,6 +20,7 @@ class SelectedBikeModelViewController: UIViewController {
     @IBOutlet weak var modelDescriptionLabel: UILabel!
     @IBOutlet weak var favouriteIcon: UIImageView!
     
+    @IBOutlet weak var selectedBikeOrderButtonOutlet: UIButton!
     @IBOutlet weak var selectedBikeTitle: UILabel!
     
     var modelName = ""
@@ -59,6 +60,7 @@ class SelectedBikeModelViewController: UIViewController {
         else {
             favouriteIcon.image = UIImage(named: "notSelect 1.png")
         }
+        selectedBikeOrderButtonOutlet.layer.cornerRadius = 10
     }
     
     @IBAction func selectedBikeModelBackButtonClicked(_ sender: Any) {

@@ -62,7 +62,8 @@ class FavoriteViewController: UIViewController, UICollectionViewDelegate, UIColl
         cell.orderButoon.tag = indexPath.row
         cell.orderButoon.addTarget(self, action: #selector(orderButtonClicked), for: .touchUpInside)
         cell.layer.borderWidth = 0.2
-
+        cell.orderButoon.layer.cornerRadius = 10
+        cell.layer.cornerRadius = 5
         return cell
     }
     
