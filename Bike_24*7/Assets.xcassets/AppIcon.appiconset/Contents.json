@@ -1,13 +1,13 @@
 {
   "images" : [
     {
-      "filename" : "âPngtreeâmotorcycle black and white logo_4369066-7.png",
+      "filename" : "appIcon40.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "âPngtreeâmotorcycle black and white logo_4369066-6.png",
+      "filename" : "appIcon60.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
@@ -33,13 +33,13 @@
       "size" : "40x40"
     },
     {
-      "filename" : "âPngtreeâmotorcycle black and white logo_4369066-8.png",
+      "filename" : "appIcon120.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "âPngtreeâmotorcycle black and white logo_4369066-9.png",
+      "filename" : "appIcon180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
