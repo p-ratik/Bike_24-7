@@ -385,14 +385,14 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuTableViewCell" id="rEF-dt-Yqd" customClass="MenuTableViewCell" customModule="Bike_24_7" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="44.666666030883789" width="268" height="63.666667938232422"/>
+                                                <rect key="frame" x="0.0" y="44.666666030883789" width="268" height="63.333332061767578"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rEF-dt-Yqd" id="0sX-n9-sJf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="268" height="63.666667938232422"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="268" height="63.333332061767578"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfh-zh-qsM">
-                                                            <rect key="frame" x="26" y="21" width="216" height="21.666666666666671"/>
+                                                            <rect key="frame" x="26" y="21" width="216" height="21.333333333333329"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -427,6 +427,7 @@
                             <constraint firstItem="yJ4-Rp-dLg" firstAttribute="top" secondItem="SVK-s8-4mv" secondAttribute="bottom" constant="20" id="8jA-De-9iT"/>
                             <constraint firstItem="BxJ-yF-MnI" firstAttribute="top" secondItem="j7x-dB-jJ3" secondAttribute="top" constant="11" id="9Pj-7c-nqd"/>
                             <constraint firstItem="cQy-Kx-ERC" firstAttribute="centerX" secondItem="zyb-l3-jja" secondAttribute="centerX" id="AFG-M9-cbC"/>
+                            <constraint firstItem="jtJ-nC-To0" firstAttribute="top" secondItem="yJ4-Rp-dLg" secondAttribute="bottom" constant="60" id="KD9-Z4-SZI"/>
                             <constraint firstItem="cQy-Kx-ERC" firstAttribute="top" secondItem="j7x-dB-jJ3" secondAttribute="top" constant="8" id="MXg-IY-xVH"/>
                             <constraint firstItem="cQy-Kx-ERC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BxJ-yF-MnI" secondAttribute="trailing" constant="8" symbolic="YES" id="Sfk-hH-Oyn"/>
                             <constraint firstItem="jtJ-nC-To0" firstAttribute="leading" secondItem="SVK-s8-4mv" secondAttribute="leading" id="VKm-iR-IPu"/>

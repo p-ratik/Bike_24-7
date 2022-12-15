@@ -136,6 +136,9 @@ class LoginViewController: UIViewController {
             passwordErrorMsg.isHidden = false
             
         }
+        else {
+            passwordErrorMsg.isHidden = true
+        }
         
         //Firebase authentication
         if(emailErrorMsg.isHidden && passwordErrorMsg.isHidden) {
