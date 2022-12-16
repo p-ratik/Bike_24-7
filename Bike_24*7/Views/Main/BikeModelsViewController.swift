@@ -18,14 +18,15 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
     var filtering = false
     var favouriteIcon: UIImage?
     
+    //MARK: Outlets for BikeModelsViewController Page
     @IBOutlet weak var bikeModelSearchBar: UISearchBar!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bikeModelsCollectionView: UICollectionView!
-    
     @IBOutlet weak var allFilterButtonOutlet: UIButton!
-    
     @IBOutlet weak var gearlessFilterButtonOutlet: UIButton!
     @IBOutlet weak var gearFilterButtonOutlet: UIButton!
+    
+    //MARK: Collection view delegate and datasource methods start
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if(searching) {
             return filteredBikeModels.count
@@ -126,7 +127,8 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
         cell.layer.cornerRadius = 10
         return cell
     }
-  
+    
+    //MARK: Objective-c function to add to favourite
     @objc func addToFavourite(sender: UIButton) {
         let indexPath1 = IndexPath(row: sender.tag, section: 0)
         guard let currUser = user else {return}
@@ -177,6 +179,7 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             return CGSize(width: 190, height: 250)
     }
+    //MARK: Collection view delegate and datasource methods end
     
 
     override func viewDidLoad() {

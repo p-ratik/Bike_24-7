@@ -10,16 +10,14 @@ import Alamofire
 
 class SelectedBikeModelViewController: UIViewController {
     
+    //MARK: Outlets for SelectedBikeModelViewController Page
     @IBOutlet weak var modelImageView: UIImageView!
-    
     @IBOutlet weak var modelBrandLabel: UILabel!
     @IBOutlet weak var modelNameLabel: UILabel!
-    
     @IBOutlet weak var modelTypeLabel: UILabel!
     @IBOutlet weak var modelPriceLabel: UILabel!
     @IBOutlet weak var modelDescriptionLabel: UILabel!
     @IBOutlet weak var favouriteIcon: UIImageView!
-    
     @IBOutlet weak var selectedBikeOrderButtonOutlet: UIButton!
     @IBOutlet weak var selectedBikeTitle: UILabel!
     
@@ -36,6 +34,7 @@ class SelectedBikeModelViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        //MARK: Assigning model data to label text
         modelNameLabel.text = modelName
         modelTypeLabel.text = modelType
         modelBrandLabel.text = modelBrand
@@ -97,6 +96,7 @@ class SelectedBikeModelViewController: UIViewController {
     }
 }
 
+//MARK: Extension to UIViewController for Alert function
 extension UIViewController {
         func showOrderPlacedAlert(itemName: String, mssg: String, title: String) {
         let alert = UIAlertController(title: title, message: itemName + "-" + mssg, preferredStyle: .alert)

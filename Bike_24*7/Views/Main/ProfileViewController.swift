@@ -9,6 +9,7 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    //MARK: ProfileViewController outlets
     @IBOutlet weak var profileNameLabel: UILabel!
     @IBOutlet weak var profileEmailLabel: UILabel!
     @IBOutlet weak var profileMobileLabel: UILabel!

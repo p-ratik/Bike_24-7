@@ -9,6 +9,8 @@ import UIKit
 import Alamofire
 
 class OrderTableViewCell: UITableViewCell {
+    
+    //MARK: Outlets for OrderTableViewCell Outlets
     @IBOutlet weak var orderedModelNameLabel: UILabel!
     @IBOutlet weak var orderedModelBrandLabel: UILabel!
     @IBOutlet weak var orderedModelPriceLabel: UILabel!
@@ -38,10 +40,10 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
    
+    //MARK: orderTableView datasource and delegate methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return orderBikes.count
     }
-    
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

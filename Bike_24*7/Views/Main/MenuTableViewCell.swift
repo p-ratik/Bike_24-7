@@ -8,7 +8,8 @@
 import UIKit
 
 class MenuTableViewCell: UITableViewCell {
-
+    
+    //MARK: MenuTableViewCell outlets
     @IBOutlet weak var menuItem: UILabel!
     @IBOutlet weak var sideBarMenuIcon: UIImageView!
     

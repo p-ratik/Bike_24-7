@@ -28,6 +28,7 @@ class FavoriteViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     
     @IBOutlet weak var favouriteModelCollectionView: UICollectionView!
+    
     var models: [Favourites] = []
     var user: User?
     var profile = false
@@ -46,6 +47,8 @@ class FavoriteViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         favouriteModelCollectionView.register(UINib(nibName: "CategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "categoryCell")
     }
+    
+    //MARK: Favourite collection view datasource and delegate Methods
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return models.count
     }
@@ -71,7 +74,7 @@ class FavoriteViewController: UIViewController, UICollectionViewDelegate, UIColl
         return CGSize(width: 190, height: 250)
     }
     
-
+    //MARK: Objective-c function to place the order
     @objc func orderButtonClicked( sender: UIButton) {
         let indexpath1 = IndexPath(row: sender.tag, section: 0)
         let mName = models[indexpath1.row].modelName

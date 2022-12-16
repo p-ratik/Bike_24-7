@@ -18,6 +18,8 @@ class ContactViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK: Map
         let latitude: CLLocationDegrees = 12.951845
         let longitude : CLLocationDegrees = 77.699577
         let latDelta: CLLocationDegrees = 0.01
