@@ -5,7 +5,7 @@
         "type": "Gear" ,
         "description" : "The Suzuki Gixxer SF is powered by a 155 cc air-cooled engine which produces of power. It has a fuel tank of 12 L and a . The Suzuki Gixxer SF starts at Rs 1.37 Lakh Rs." ,
         "image": "https://media.zigcdn.com/media/model/2020/Oct/suzuki-gixxer-sf-a-right-side-view_360x240.jpg",
-        "Price" : "1.37 Lakh"
+        "Price" : "Rs.1.37 Lakh"
     },
     {
         "id" : "2",
@@ -13,7 +13,7 @@
         "type": "Gearless" ,
         "description" : "The motor of the Suzuki Burgman Street 125 is compliant with BS6 emission norms. Also, the engine features fuel injection, which ensures smoother power delivery. Also, you get a better fuel efficiency when compared to scooters with carbureted fuel delivery system. The engine can produce 8.7 BHP with 10 Nm of torque.",
         "image": "https://imgd.aeplcdn.com/1280x720/bw/models/suzuki-burgman-street-125-bs-vi20200217114022.jpg",
-        "Price" : "94,000"
+        "Price" : "Rs.94,000"
     },
     {
         "id" : "3",
@@ -21,7 +21,7 @@
         "type": "Gearless" ,
         "description" : "Suzuki Access 125 is a scooter available at a starting price of Rs. 77,250 in India. It is available in 6 variants and 14 colours with top variant price starting from Rs. 86,705. The Suzuki Access 125 is powered by 124cc BS6 engine which develops a power of 8.6 bhp and a torque of 10 Nm.",
         "image": "https://cdn.suzukimotorcycle.co.in/public-live/uploads/color-images/original/RideConnect_Edition_Matte_Blue_Side_R01_P02-min_61b9ca622bf58.jpg",
-        "Price" : "87,000"
+        "Price" : "Rs.87,000"
     },
     {
         "id" : "4",
@@ -29,7 +29,7 @@
         "type": "Gear" ,
         "description" : " The Suzuki V-Strom SX features a fully digital instrument cluster with turn-by-turn navigation and Bluetooth connectivity, and displays info such as call notifications, message alerts, speed exceeding warning, phone battery level display and ETA. Additionally, it features a USB charging socket and Suzuki Easy start system. ",
         "image": "https://cdn.suzukimotorcycle.co.in/public-live/uploads/product-360-images/original/48/3.png",
-        "Price" : "2,11,000"
+        "Price" : "Rs.2,11,000"
     },
 {
         "id" : "5",
@@ -37,7 +37,7 @@
         "type": "Gear" ,
         "description" : "  The bike is available in 7 variants with 3 colour options. The 154.9 cc engine of Intruder is mated with 5 gears, producing maximum power of 13.41,14.59,14.60 bhp @ 8000 rpm and a maximum torque of 14.00 Nm @ 6000 rpm. Suzuki intruder is very good, comfortable and feels luxury after I drive 5000 km to feel very good to choose intruder bike",
         "image": "https://imgd.aeplcdn.com/600x600/n/cw/ec/49464/suzuki-intruder-front-three-quarter7.jpeg",
-        "Price" : "1,22,00"
+        "Price" : "Rs.1,22,00"
     }
 
 

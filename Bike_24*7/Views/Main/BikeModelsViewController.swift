@@ -131,16 +131,62 @@ class BikeModelsViewController: UIViewController, UICollectionViewDelegate, UICo
     //MARK: Objective-c function to add to favourite
     @objc func addToFavourite(sender: UIButton) {
         let indexPath1 = IndexPath(row: sender.tag, section: 0)
+        var addToFavourite = false
         guard let currUser = user else {return}
-        if (searching) {
-            DBOperations.dbOperationInstance().insertDataToFavorite(mName: filteredBikeModels[indexPath1.row].name, mBrand: fileName, mDesc: filteredBikeModels[indexPath1.row].description, mPrice: filteredBikeModels[indexPath1.row].price, mImage: filteredBikeModels[indexPath1.row].image, mType: filteredBikeModels[indexPath1.row].type, mUser: currUser)
-        }
-        if (filtering) {
-            DBOperations.dbOperationInstance().insertDataToFavorite(mName: appliedFilterModels[indexPath1.row].name, mBrand: fileName, mDesc: appliedFilterModels[indexPath1.row].description, mPrice: appliedFilterModels[indexPath1.row].price, mImage: appliedFilterModels[indexPath1.row].image, mType: appliedFilterModels[indexPath1.row].type, mUser: currUser)
-        }
-        else {
-            DBOperations.dbOperationInstance().insertDataToFavorite(mName: BikeModelJsonParsing.bikeArr[indexPath1.row].name, mBrand: fileName, mDesc: BikeModelJsonParsing.bikeArr[indexPath1.row].description, mPrice: BikeModelJsonParsing.bikeArr[indexPath1.row].price, mImage: BikeModelJsonParsing.bikeArr[indexPath1.row].image, mType: BikeModelJsonParsing.bikeArr[indexPath1.row].type, mUser: currUser)
-        }
+            if (searching) {
+               if currUser.toFavourites?.allObjects != nil {
+                   let models = currUser.toFavourites?.allObjects as! [Favourites]
+                   for model in models {
+                       if (model.modelName == filteredBikeModels[indexPath1.row].name) {
+                           addToFavourite = true
+                           break
+                       }
+                   }
+               }
+               if(!addToFavourite) {
+                DBOperations.dbOperationInstance().insertDataToFavorite(mName: filteredBikeModels[indexPath1.row].name, mBrand: fileName, mDesc: filteredBikeModels[indexPath1.row].description, mPrice: filteredBikeModels[indexPath1.row].price, mImage: filteredBikeModels[indexPath1.row].image, mType: filteredBikeModels[indexPath1.row].type, mUser: currUser)
+               }
+               else {
+                  DBOperations.dbOperationInstance().deleteModelfromFavourite(mName: filteredBikeModels[indexPath1.row].name)
+               }
+            }
+            else if (filtering) {
+               if currUser.toFavourites?.allObjects != nil {
+                   let models = currUser.toFavourites?.allObjects as! [Favourites]
+                   for model in models {
+                       if (model.modelName == appliedFilterModels[indexPath1.row].name) {
+                           addToFavourite = true
+                           break
+                       }
+                   }
+               }
+               if(!addToFavourite) {
+                DBOperations.dbOperationInstance().insertDataToFavorite(mName: appliedFilterModels[indexPath1.row].name, mBrand: fileName, mDesc: appliedFilterModels[indexPath1.row].description, mPrice: appliedFilterModels[indexPath1.row].price, mImage: appliedFilterModels[indexPath1.row].image, mType: appliedFilterModels[indexPath1.row].type, mUser: currUser)
+               }
+               else {
+                  DBOperations.dbOperationInstance().deleteModelfromFavourite(mName: appliedFilterModels[indexPath1.row].name)
+               }
+            }
+            else {
+               if currUser.toFavourites?.allObjects != nil {
+                   let models = currUser.toFavourites?.allObjects as! [Favourites]
+                   for model in models {
+                      if (model.modelName == BikeModelJsonParsing.bikeArr[indexPath1.row].name) {
+                           addToFavourite = true
+                           break
+                       }
+                   }
+               }
+               if(!addToFavourite) {
+                DBOperations.dbOperationInstance().insertDataToFavorite(mName: BikeModelJsonParsing.bikeArr[indexPath1.row].name, mBrand: fileName, mDesc: BikeModelJsonParsing.bikeArr[indexPath1.row].description, mPrice: BikeModelJsonParsing.bikeArr[indexPath1.row].price, mImage: BikeModelJsonParsing.bikeArr[indexPath1.row].image, mType: BikeModelJsonParsing.bikeArr[indexPath1.row].type, mUser: currUser)
+               }
+               else {
+                  DBOperations.dbOperationInstance().deleteModelfromFavourite(mName: BikeModelJsonParsing.bikeArr[indexPath1.row].name)
+               }
+            }
+      
+        
+    
         bikeModelsCollectionView.reloadData()
     }
     

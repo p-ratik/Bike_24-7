@@ -79,9 +79,24 @@ class SelectedBikeModelViewController: UIViewController {
     
     
     @IBAction func tappedOnFavoriteIcon(_ sender: Any) {
-        favouriteIcon.image = UIImage(named: "selected 1.jpg")
         guard let cUser = user else {return}
-        DBOperations.dbOperationInstance().insertDataToFavorite(mName: modelName, mBrand: modelBrand, mDesc: modelDescription, mPrice: modelPrice, mImage: modelImage, mType: modelType, mUser: cUser)
+        ifFavourite = false
+        if cUser.toFavourites?.allObjects != nil {
+            let models = cUser.toFavourites?.allObjects as! [Favourites]
+            for model in models {
+                if (model.modelName == modelName) {
+                    ifFavourite = true
+                }
+            }
+        }
+        if (!ifFavourite) {
+            favouriteIcon.image = UIImage(named: "selected 1.png")
+            DBOperations.dbOperationInstance().insertDataToFavorite(mName: modelName, mBrand: modelBrand, mDesc: modelDescription, mPrice: modelPrice, mImage: modelImage, mType: modelType, mUser: cUser)
+        }
+        else {
+            favouriteIcon.image = UIImage(named: "notSelect 1.png")
+            DBOperations.dbOperationInstance().deleteModelfromFavourite(mName: modelName)
+        }
         
         /*
          // MARK: - Navigation

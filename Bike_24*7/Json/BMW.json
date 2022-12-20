@@ -5,7 +5,7 @@
         "type": "Gear" ,
         "description" : "BMW Motorrad has brought in a wide range of bikes in India. The engine on the BMW R 1200 GS Adventure is the same as the 1200 GS, which is a 1,170cc engine delivering an output of 125bhp and 125Nm of torque at the rear wheels. The motorcycle is capable of a top speed of 200kmph." ,
         "image": "https://media.zigcdn.com/media/model/2017/Apr/bmw-right_320x160.jpg",
-        "Price" : "17,28,395"
+        "Price" : "Rs.17,28,395"
     },
     {
         "id" : "2",
@@ -13,7 +13,7 @@
         "type": "Gear" ,
         "description" : "The R18 is the only cruiser in BMW Motorrad’s portfolio. The BMW R18 is powered by 1802cc BS6 engine which develops a power of 89.84 bhp and a torque of 158 Nm. With both front and rear disc brakes, BMW R18 comes up with anti-locking braking system. This R18 bike weighs 345 kg and has a fuel tank capacity of 16 liters.",
         "image": "https://imgd.aeplcdn.com/476x268/bw/models/bmw-r18-standard20200919140914.jpg",
-        "Price" : "19,89,819"
+        "Price" : "Rs.19,89,819"
     },
     {
         "id" : "3",
@@ -21,7 +21,7 @@
         "type": "Gear" ,
         "description" : "The 2022 BMW F 900 XR Pro sports adventure tourer has been launched in the Indian market. The BMW F900XR is powered by 895cc BS6 engine which develops a power of 103.25 bhp and a torque of 92 Nm. With both front and rear disc brakes, BMW F900XR comes up with anti-locking braking system. This F900XR bike weighs 219 kg and has a fuel tank capacity of 15.5 liters.",
         "image": "https://c.ndtvimg.com/2020-04/3p3nrqm4_bmw-f-900-xr_625x300_21_April_20.jpg",
-        "Price" : "12.30 Lakh"
+        "Price" : "Rs.12.30 Lakh"
     },
     {
         "id" : "4",
@@ -29,7 +29,7 @@
         "type": "Gearless" ,
         "description" : "The BMW C 650 GT is a middleweight maxi scooter offered by the brand. The C 650GT is currently the flagship BMW scooter. The BMW C 650 GT comes with a 647cc Parallel-twin, liquid-cooled, DOHC engine. The engine cranks out 60 HP at 7,500 RPM and 63 NM at 6,000 RPM, making it the most powerful BMW Scooter.",
         "image": "https://www.mototechindia.com/wp-content/uploads/2020/08/bmw-c-650-gt.jpg",
-        "Price" : "11.50 Lakh"
+        "Price" : "Rs.11.50 Lakh"
     },
     {
         "id" : "5",
@@ -37,7 +37,7 @@
         "type": "Gear" ,
         "description" : "BMW Motorrad has introduced the BS6-compliant R 1250 GS Adventure in the Indian market. he BMW R 1250 GS Adventure is powered by 1254cc BS6 engine which develops a power of 134.1 bhp and a torque of 143 Nm. With both front and rear disc brakes, BMW R 1250 GS Adventure comes up with anti-locking braking system. This R 1250 GS Adventure bike weighs 268 kg and has a fuel tank capacity of 30 liters.",
         "image": "https://imgd.aeplcdn.com/1200x900/bw/models/bmw-r-1250-gs-standard20200731223837.jpg",
-        "Price" : "21.30 Lakh"
+        "Price" : "Rs.21.30 Lakh"
     }
 
 ]

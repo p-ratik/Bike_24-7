@@ -5,7 +5,7 @@
         "type": "Gearless" ,
         "description" : "The Vespa ZX 125 is powered by 124.45cc BS6 engine which develops a power of 9.78 bhp and a torque of 9.60 Nm.This ZX 125 scooter weighs 114 kg and has a fuel tank capacity of 7.4 liters." ,
         "image": "https://static.autox.com/uploads/bikes/2019/08/vespa-zx-125-1-apr-2019.jpg",
-        "Price" : "1.16 Lakh"
+        "Price" : "Rs.1.16 Lakh"
     },
     {
         "id" : "2",
@@ -13,7 +13,7 @@
         "type": "Gearless" ,
         "description" : "The styling of the Vespa VXL 150 harks back to the retro design of the old-school Vespa scooters, which gives it a simple and clean look. The Vespa VXL 150 is powered by 149.5cc BS6 engine which develops a power of 10.32 bhp and a torque of 10.60 Nm.",
         "image": "https://5.imimg.com/data5/UP/GW/MY-50536557/vespa-vxl-150-elegante-500x500.jpg",
-        "Price" : "1.43 Lakh"
+        "Price" : "Rs.1.43 Lakh"
     },
     {
         "id" : "3",
@@ -21,7 +21,7 @@
         "type": "Gearless" ,
         "description" : "The Vespa Elegante is a special edition model that Piaggio launched a few years ago. The Vespa Elegante 150 is powered by 149.5cc BS6 engine which develops a power of 10.32 bhp and a torque of 10.60 Nm.",
         "image": "https://imgd.aeplcdn.com/1280x720/bw/models/vespa-elegante-125-bs-vi20200704232539.jpg",
-        "Price" : "1.55 Lakh"
+        "Price" : "Rs.1.55 Lakh"
     },
     {
         "id" : "4",
@@ -29,7 +29,7 @@
         "type": "Gearless" ,
         "description" : "The SXL 125 features a classic design which is in tune with the Italian marque’s retro character. The Vespa SXL 125 is powered by 124.45cc BS6 engine which develops a power of 9.78 bhp and a torque of 9.60 Nm.",
         "image": "https://ic1.maxabout.us/autos/tw_india//V/2020/6/vespa-sxl-125-in-blue-color.jpg",
-        "Price" : "1.34 Lakh"
+        "Price" : "Rs.1.34 Lakh"
     },
     {
         "id" : "5",
@@ -37,7 +37,7 @@
         "type": "Gearless" ,
         "description" : "The VXL 125 is amongst the most affordable models in Vespa’s India line-up. It is available in only 1 variant and 8 colours. The Vespa VXL 125 is powered by 124.45cc BS6 engine which develops a power of 9.78 bhp and a torque of 9.60 Nm.",
         "image": "https://imgd.aeplcdn.com/476x268/bw/models/vespa-vxl-125-bs-vi20200504235404.jpg",
-        "Price" : "1.30 Lakh"
+        "Price" : "Rs.1.30 Lakh"
     }
 
 ]

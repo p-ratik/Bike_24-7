@@ -649,7 +649,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uMb-K2-n7s">
                                                     <rect key="frame" x="20" y="210" width="160" height="158"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUs-MC-O5w">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUs-MC-O5w">
                                                             <rect key="frame" x="0.0" y="0.0" width="160" height="20.333333333333332"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -689,27 +689,30 @@
                                                         <constraint firstItem="hLu-c8-pKe" firstAttribute="leading" secondItem="uMb-K2-n7s" secondAttribute="leading" id="yWG-kr-DxY"/>
                                                     </constraints>
                                                 </stackView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selected 1" translatesAutoresizingMaskIntoConstraints="NO" id="Wxv-4B-MM9">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSH-Dz-i4i">
                                                     <rect key="frame" x="170" y="5" width="25" height="20"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="5Ym-vz-1Se"/>
+                                                        <constraint firstAttribute="height" constant="20" id="WZ5-EW-yI5"/>
                                                     </constraints>
-                                                </imageView>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="selected 1"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Wxv-4B-MM9" firstAttribute="leading" secondItem="TlY-ar-yn7" secondAttribute="leading" constant="170" id="0SH-xc-2kf"/>
                                                 <constraint firstAttribute="bottom" secondItem="uMb-K2-n7s" secondAttribute="bottom" constant="10" id="3Ue-n1-0KH"/>
+                                                <constraint firstAttribute="trailing" secondItem="aSH-Dz-i4i" secondAttribute="trailing" constant="5" id="6BA-GR-YbA"/>
                                                 <constraint firstAttribute="trailing" secondItem="uMb-K2-n7s" secondAttribute="trailing" constant="20" id="FF9-iD-353"/>
                                                 <constraint firstAttribute="trailing" secondItem="2aC-4B-GWW" secondAttribute="trailing" constant="10" id="SwL-b5-McJ"/>
+                                                <constraint firstItem="aSH-Dz-i4i" firstAttribute="top" secondItem="TlY-ar-yn7" secondAttribute="top" constant="5" id="cjv-W0-ft7"/>
+                                                <constraint firstItem="aSH-Dz-i4i" firstAttribute="leading" secondItem="TlY-ar-yn7" secondAttribute="leading" constant="170" id="d7F-Wn-efF"/>
                                                 <constraint firstItem="2aC-4B-GWW" firstAttribute="top" secondItem="TlY-ar-yn7" secondAttribute="top" constant="10" id="eGM-ud-0Uh"/>
-                                                <constraint firstItem="Wxv-4B-MM9" firstAttribute="top" secondItem="TlY-ar-yn7" secondAttribute="top" constant="5" id="fyt-wO-rn7"/>
                                                 <constraint firstItem="uMb-K2-n7s" firstAttribute="top" secondItem="2aC-4B-GWW" secondAttribute="bottom" constant="20" id="iwz-ho-5f3"/>
                                                 <constraint firstItem="uMb-K2-n7s" firstAttribute="leading" secondItem="TlY-ar-yn7" secondAttribute="leading" constant="20" id="kFK-kn-B5k"/>
-                                                <constraint firstAttribute="trailing" secondItem="Wxv-4B-MM9" secondAttribute="trailing" constant="5" id="v0N-p9-sZe"/>
                                                 <constraint firstItem="2aC-4B-GWW" firstAttribute="leading" secondItem="TlY-ar-yn7" secondAttribute="leading" constant="10" id="weS-4B-igw"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
+                                            <outlet property="addToFavouriteIcon" destination="aSH-Dz-i4i" id="r5W-4e-bFP"/>
                                             <outlet property="modelDescription" destination="hLu-c8-pKe" id="Kgm-yj-buV"/>
                                             <outlet property="modelImage" destination="2aC-4B-GWW" id="NBM-QI-sDF"/>
                                             <outlet property="modelName" destination="qUs-MC-O5w" id="lzG-YD-qCD"/>
@@ -780,12 +783,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNt-Fc-AnP">
-                                <rect key="frame" x="0.0" y="44" width="45" height="50"/>
+                                <rect key="frame" x="0.0" y="44" width="45.333333333333336" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XR0-Rl-jiG"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward.2" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -1793,7 +1796,6 @@ DQ
         <image name="archivebox" catalog="system" width="128" height="106"/>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="bikeLogo" width="350" height="350"/>
-        <image name="chevron.backward.2" catalog="system" width="128" height="105"/>
         <image name="exclamationmark.triangle.fill" catalog="system" width="128" height="112"/>
         <image name="hand.point.right.fill" catalog="system" width="128" height="99"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>

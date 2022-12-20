@@ -95,7 +95,7 @@ class DBOperations: NSObject {
         }
     }
     
-    //insert favorites models into favorite list
+    //MARK: insert favorites models into favorite list
     func insertDataToFavorite(mName: String, mBrand: String, mDesc: String, mPrice: String, mImage: String, mType: String, mUser: User) {
         
         let managedObject = AppDelegate.sharedAppDelegateInstance().persistentContainer.viewContext
@@ -120,6 +120,7 @@ class DBOperations: NSObject {
         }
     }
     
+    //MARK: Fetch Record from favourite entity
     func fetchRecordFormFavourite() -> [Favourites] {
         let managedObject = AppDelegate.sharedAppDelegateInstance().persistentContainer.viewContext
         
@@ -135,6 +136,8 @@ class DBOperations: NSObject {
                fatalError("failed")
         }
     }
+    
+    //MARK: Fetch all record from user entity
     func fetchAllRecordFromUser() -> [User] {
         let managedObject = AppDelegate.sharedAppDelegateInstance().persistentContainer.viewContext
         
@@ -151,6 +154,7 @@ class DBOperations: NSObject {
         }
     }
     
+    //MARK: Insert data into order entity
     func insertDataToOrderList(mName: String, mBrand: String, mImage: String, mPrice: String, mUser: User) {
         
         let managedObject = AppDelegate.sharedAppDelegateInstance().persistentContainer.viewContext
@@ -173,6 +177,7 @@ class DBOperations: NSObject {
         }
     }
     
+    //MARK: Fetch All record from order entity
     func fetchRecordFormOrderList() -> [Order] {
         let managedObject = AppDelegate.sharedAppDelegateInstance().persistentContainer.viewContext
         
@@ -187,5 +192,27 @@ class DBOperations: NSObject {
                print(error.localizedDescription)
                fatalError("failed")
         }
+    }
+    
+    //MARK: Delete specific record from favourite entity
+    func deleteModelfromFavourite(mName: String) {
+        let managedObject = AppDelegate.sharedAppDelegateInstance().persistentContainer.viewContext
+        let request: NSFetchRequest<Favourites> = Favourites.fetchRequest()
+                request.returnsObjectsAsFaults = false
+                let predicate = NSPredicate(format: "modelName == %@", mName)
+                request.predicate = predicate
+                do {
+                    let modelArray = try managedObject.fetch(request)
+                    for i in 0..<modelArray.count {
+                        managedObject.delete(modelArray[i])
+                    }
+                    do {
+                        try managedObject.save()
+                    } catch (let error) {
+                        print(error.localizedDescription)
+                    }
+                } catch (let error) {
+                    print(error.localizedDescription)
+                }
     }
 }

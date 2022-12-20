@@ -122,7 +122,7 @@
 		A96055F129408138005B6562 /* BMW.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BMW.json; sourceTree = "<group>"; };
 		A96055F329408162005B6562 /* BGauss.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BGauss.json; sourceTree = "<group>"; };
 		A96055F529408195005B6562 /* Yamaha.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Yamaha.json; sourceTree = "<group>"; };
-		A96055F72940828B005B6562 /* BikeModelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeModelsViewController.swift; sourceTree = "<group>"; };
+		A96055F72940828B005B6562 /* BikeModelsViewController.swift */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = BikeModelsViewController.swift; sourceTree = "<group>"; };
 		A96055F92940847A005B6562 /* BikeModelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeModelsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A96055FB2940855F005B6562 /* BikeModelJsonParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeModelJsonParsing.swift; sourceTree = "<group>"; };
 		A96055FD2940857D005B6562 /* BikesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesDataModel.swift; sourceTree = "<group>"; };

@@ -5,7 +5,7 @@
         "type": "Gear" ,
         "description" : "Royal Enfield Scram 411 is a adventure bike available at a starting price of Rs. 2,02,923 in India. It is available in 3 variants and 7 colours with top variant price starting from Rs. 2,08,593. The Royal Enfield Scram 411 is powered by 411cc BS6 engine which develops a power of 24.3 bhp and a torque of 32 Nm.",
         "image": "https://images.livemint.com/img/2022/03/15/600x338/Royal_Enfield_Scram_411_1647343474335_1647343474565.jpeg",
-        "Price" : "2,02,000"
+        "Price" : "Rs.2,02,000"
     },
     {
         "id" : "2",
@@ -13,7 +13,7 @@
         "type": "Gear" ,
         "description" : " The Royal Enfield Classic 350 is the second product based on Royal Enfield’s J-series platform. It gets the same 349cc, air-cooled single-cylinder engine as the Meteor 350. That said, the state of tune is slightly different. While it makes the same power and torque as the Meteor 350 at 20.2PS at 6100rpm and 27Nm at 4000rpm.",
         "image": "https://imgd.aeplcdn.com/476x268/bw/models/royal-enfield-classic-350-single-channel-abs--bs-vi20200303121804.jpg",
-        "Price" : "2,21,000"
+        "Price" : "Rs.2,21,000"
     },
     {
         "id" : "3",
@@ -21,7 +21,7 @@
         "type": "Gear" ,
         "description" : " The Royal Enfield Himalayan is propelled by a 411cc, single-cylinder mill making 24.31PS and 32Nm. It paired to a five-speed gearbox. The latest iteration of the Himalayan remains a capable off-roader, suspended by long-travel suspension units at both ends.",
         "image": "https://motoroctane.com/wp-content/uploads/2020/05/himalayan-..jpeg",
-        "Price" : "1,83,000"
+        "Price" : "Rs.1,83,000"
     },
 {
         "id" : "4",
@@ -29,7 +29,7 @@
         "type": "Gear" ,
         "description" : " The Interceptor is a British motorcycle made by Royal Enfield between 1960 and 1970. The 700 Interceptor introduced in 1960 was a modified version of the company's 692 cc Constellation model. In 1962, the company introduced the 750 Interceptor which evolved constantly until the end of production ",
         "image": "https://gaadiwaadi.com/wp-content/uploads/2020/12/Royal-Enfield-Interceptor-350-rendering.jpg",
-        "Price" : "3,00,000"
+        "Price" : "Rs.3,00,000"
     },
 {
         "id" : "5",
@@ -37,7 +37,7 @@
         "type": "Gear" ,
         "description" : " The Meteor is an Indian Cruiser-style motorcycle manufactured by Royal Enfield in India. The model was developed by engineers based at Royal Enfield’s two state-of-the-art technical centres, in Chennai. The Meteor is a direct replacement to Thunderbird 350.",
         "image": "https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Royal-Enfield-Meteor-350-200120211501.jpg",
-        "Price" : "2,50,000"
+        "Price" : "Rs.2,50,000"
     }
 
 
